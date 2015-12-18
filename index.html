@@ -29,7 +29,7 @@ layout: default
               {% unless prepend == "---" %}
                 <input type="checkbox">
               {% endunless %}
-              {{ ingredient | strip | replace: "---", "" }}
+              {{prepend}}{{ ingredient | strip | replace: "---", "" }}
             </button>
           {% endfor %}
         </ul>
