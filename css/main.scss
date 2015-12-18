@@ -9,8 +9,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background: url("/images/bg.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
-  background-color: #222;
-  color: #222;
+  background-color: #000;
+  color: #000;
 }
 
 .site-header,
@@ -94,22 +94,31 @@ body {
 }
 
 .ingredient {
-  border: 0;
   padding: .1rem 1.25rem;
   &:nth-child(even) {
     background: rgba(darkred, .07);
   }
+  input {
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+  }
 }
 
 .step {
-  border: 0;
   &:nth-child(even) {
     background: rgba(darkred, .14);
   }
 }
 
 .ingredient,.step {
-  &:hover, &:focus {
+  border: 0;
+  color: #000 !important;
+  &:hover {
+    background: #000 !important;
+    color: #FFF !important;
+  }
+  &:focus {
     background: #BF0B24 !important;
     color: #FFF !important;
     outline: none;

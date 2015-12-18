@@ -24,7 +24,10 @@ layout: default
         <ul class="list-group list-group-flush ingredients">
           <li class="list-group-item list-group-item-title">Τι θα χρειαστούμε</li>
           {% for ingredient in recipe.ingredients.el %}
-            <button class="list-group-item ingredient">{{ ingredient }}</button>
+            <button class="list-group-item ingredient">
+              <input type="checkbox">
+              {{ ingredient }}
+            </button>
           {% endfor %}
         </ul>
         <ul class="list-group list-group-flush steps">
