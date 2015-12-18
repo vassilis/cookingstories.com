@@ -24,16 +24,19 @@ layout: default
         <ul class="list-group list-group-flush ingredients">
           <li class="list-group-item list-group-item-title">Τι θα χρειαστούμε</li>
           {% for ingredient in recipe.ingredients.el %}
-            <button class="list-group-item ingredient">
-              <input type="checkbox">
-              {{ ingredient }}
+            {% assign prepend = ingredient | strip | slice: 0, 3 %}
+              <button class="list-group-item ingredient">
+              {% unless prepend == "---" %}
+                <input type="checkbox">
+              {% endunless %}
+              {{ ingredient | strip | replace: "---", "" }}
             </button>
           {% endfor %}
         </ul>
         <ul class="list-group list-group-flush steps">
           <li class="list-group-item list-group-item-title">Βήματα</li>
           {% for step in recipe.steps.el %}
-            <button class="list-group-item step">{{ step }}</button>
+            <button class="list-group-item step">{{ step | strip }}</button>
           {% endfor %}
         </ul>
       </div>
