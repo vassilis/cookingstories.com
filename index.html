@@ -24,13 +24,13 @@ layout: default
         <ul class="list-group list-group-flush ingredients">
           <li class="list-group-item list-group-item-title">Τι θα χρειαστούμε</li>
           {% for ingredient in recipe.ingredients.el %}
-            <li class="list-group-item ingredient">{{ ingredient }}</li>
+            <button class="list-group-item ingredient">{{ ingredient }}</button>
           {% endfor %}
         </ul>
         <ul class="list-group list-group-flush steps">
           <li class="list-group-item list-group-item-title">Βήματα</li>
           {% for step in recipe.steps.el %}
-            <li class="list-group-item step">{{ step }}</li>
+            <button class="list-group-item step">{{ step }}</button>
           {% endfor %}
         </ul>
       </div>

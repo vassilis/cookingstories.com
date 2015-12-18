@@ -47,8 +47,9 @@ body {
     color: #FFF;
     border: 0;
     padding: 0;
-    &:hover {
+    &:hover, &:focus {
       color: #BF0B24;
+      outline: none;
     }
     @media (max-width: 768px) {
       background: rgba(#000, .8);
@@ -98,15 +99,20 @@ body {
   &:nth-child(even) {
     background: rgba(darkred, .07);
   }
-  &:last-child {
-    padding-bottom: 10px;
-  }
 }
 
 .step {
   border: 0;
   &:nth-child(even) {
     background: rgba(darkred, .14);
+  }
+}
+
+.ingredient,.step {
+  &:hover, &:focus {
+    background: #BF0B24 !important;
+    color: #FFF !important;
+    outline: none;
   }
 }
 
