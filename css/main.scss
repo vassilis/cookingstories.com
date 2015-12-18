@@ -33,13 +33,14 @@ body {
 
 .index {
   margin-bottom: 100px;
-  border-radius: 4px;
   @media (min-width: 768px) {
-    background: rgba(#000, .8);
+    background: url("/images/heart.svg") 90% 50% no-repeat rgba(#000, .6);
     padding: 50px 0;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+    .list-group {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
   }
   a.list-group-item {
     background: none;
@@ -95,7 +96,7 @@ body {
   border: 0;
   padding: .1rem 1.25rem;
   &:nth-child(even) {
-    background: #F3F1DA;
+    background: rgba(darkred, .07);
   }
   &:last-child {
     padding-bottom: 10px;
@@ -105,7 +106,7 @@ body {
 .step {
   border: 0;
   &:nth-child(even) {
-    background: #F5E6DA;
+    background: rgba(darkred, .14);
   }
 }
 

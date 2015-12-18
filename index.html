@@ -2,33 +2,38 @@
 layout: default
 ---
 
-<div class="list-group list-group-flush index row">
-  {% for recipe in site.data.recipes %}
-    <a class="list-group-item" href="#{{ recipe.slugs[0] }}">
-      {{ recipe.title.el }}
-    </a>
-  {% endfor %}
-</div>
-
-<div class="card-columns">
-  {% for recipe in site.data.recipes %}
-    <div class="card" id="{{ recipe.slugs[0] }}">
-      <!-- <img class="card-img-top" src="{{ recipe.photo_small }}" data-src="{{ recipe.photo_small }}" alt="{{ recipe.title.el }}"> -->
-      <div class="card-block">
-        <h4 class="card-title">{{ recipe.title.el }}</h4>
-      </div>
-      <ul class="list-group list-group-flush ingredients">
-        <li class="list-group-item list-group-item-title">Τι θα χρειαστούμε</li>
-        {% for ingredient in recipe.ingredients.el %}
-          <li class="list-group-item ingredient">{{ ingredient }}</li>
-        {% endfor %}
-      </ul>
-      <ul class="list-group list-group-flush steps">
-        <li class="list-group-item list-group-item-title">Βήματα</li>
-        {% for step in recipe.steps.el %}
-          <li class="list-group-item step">{{ step }}</li>
-        {% endfor %}
-      </ul>
+<section class="index">
+  <div class="container">
+    <div class="list-group list-group-flush">
+      {% for recipe in site.data.recipes %}
+        <a class="list-group-item" href="#{{ recipe.slugs[0] }}">
+          {{ recipe.title.el }}
+        </a>
+      {% endfor %}
     </div>
-  {% endfor %}
+  </div>
+</section>
+
+<div class="container">
+  <div class="card-columns">
+    {% for recipe in site.data.recipes %}
+      <div class="card" id="{{ recipe.slugs[0] }}">
+        <div class="card-block">
+          <h4 class="card-title">{{ recipe.title.el }}</h4>
+        </div>
+        <ul class="list-group list-group-flush ingredients">
+          <li class="list-group-item list-group-item-title">Τι θα χρειαστούμε</li>
+          {% for ingredient in recipe.ingredients.el %}
+            <li class="list-group-item ingredient">{{ ingredient }}</li>
+          {% endfor %}
+        </ul>
+        <ul class="list-group list-group-flush steps">
+          <li class="list-group-item list-group-item-title">Βήματα</li>
+          {% for step in recipe.steps.el %}
+            <li class="list-group-item step">{{ step }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
 </div>
