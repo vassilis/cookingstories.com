@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="card">
+  <div class="list-group list-group-flush">
+    {% for recipe in site.data.recipes %}
+      <a class="list-group-item" href="#{{ recipe.slugs[0] }}">{{ recipe.title.el }}</a>
+    {% endfor %}
+  </div>
+</div>
+<div class="card-columns">
+  {% for recipe in site.data.recipes %}
+    <div class="card" id="{{ recipe.slugs[0] }}">
+      <img class="card-img-top" src="{{ recipe.photo_small }}" data-src="{{ recipe.photo_small }}" alt="{{ recipe.title.el }}">
+      <div class="card-block">
+        <h4 class="card-title">{{ recipe.title.el }}</h4>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Τι θα χρειαστούμε</strong></li>
+        {% for ingredient in recipe.ingredients.el %}
+          <li class="list-group-item">{{ ingredient }}</li>
+        {% endfor %}
+        <li class="list-group-item"><strong>Βήματα</strong></li>
+        {% for step in recipe.steps.el %}
+          <li class="list-group-item">{{ step }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

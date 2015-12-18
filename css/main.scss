@@ -1,0 +1,74 @@
+---
+---
+
+@import url("//fonts.googleapis.com/css?family=Fredericka+the+Great");
+@import url("//fonts.googleapis.com/css?family=Roboto&subset=latin,greek");
+@import url("//fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=latin,greek");
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 100px auto;
+  background: #e5e5e5;
+}
+
+.site-header,
+.site-footer {
+  font: 400 4em/1 'Fredericka the Great', sans-serif;
+  text-align: center;
+  color: #444;
+}
+
+.site-header {
+  margin: 0 30px 100px;
+}
+
+.site-footer {
+  margin: 100px 30px 0;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.card-title {
+  margin: 0;
+  font: 700 1.8em/1 'Roboto Condensed', sans-serif;
+}
+
+.list-group-item {
+  strong {
+    font: 700 1.4em/1 'Roboto Condensed', sans-serif;
+  }
+}
+
+@media (max-width: 1279px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1921px) {
+  .card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
