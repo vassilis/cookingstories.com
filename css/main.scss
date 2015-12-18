@@ -19,6 +19,19 @@ body {
   text-align: center;
   color: #FFF;
   padding: 100px 30px;
+  text-shadow: -5px 0px 20px #FFF;
+}
+
+.site-footer + div {
+  color: #FFF;
+  text-align: center;
+  margin: 0 auto 100px;
+  max-width: 600px;
+  padding: 0 30px
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .card {
