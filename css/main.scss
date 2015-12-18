@@ -1,29 +1,28 @@
 ---
 ---
 
-@import url("//fonts.googleapis.com/css?family=Fredericka+the+Great");
+@import url("//fonts.googleapis.com/css?family=Niconne");
 @import url("//fonts.googleapis.com/css?family=Roboto&subset=latin,greek");
 @import url("//fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=latin,greek");
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 100px auto;
-  background: #e5e5e5;
+  background: url("/images/bg.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
+  background-color: #222;
+  color: #222;
 }
 
 .site-header,
 .site-footer {
-  font: 400 4em/1 'Fredericka the Great', sans-serif;
+  font: 400 4em/1 'Niconne', sans-serif;
   text-align: center;
-  color: #444;
+  color: #FFF;
+  padding: 100px 30px;
 }
 
-.site-header {
-  margin: 0 30px 100px;
-}
-
-.site-footer {
-  margin: 100px 30px 0;
+.card {
+  border: 0;
 }
 
 .card-img-top {
