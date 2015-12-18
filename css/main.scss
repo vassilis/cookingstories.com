@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url("//fonts.googleapis.com/css?family=Niconne");
+@import url("//fonts.googleapis.com/css?family=Sacramento");
 @import url("//fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,greek");
 @import url("//fonts.googleapis.com/css?family=Roboto+Condensed:300,700&subset=latin,greek");
 
@@ -15,11 +15,12 @@ body {
 
 .site-header,
 .site-footer {
-  font: 400 4em/1 'Niconne', sans-serif;
+  font: 400 6em/1 'Sacramento', sans-serif;
   text-align: center;
   color: #FFF;
   padding: 100px 30px;
-  text-shadow: -5px 0px 20px #FFF;
+  text-shadow: 0 1px 1px #000;
+  word-spacing: -20px;
 }
 
 .site-footer + div {
@@ -29,6 +30,39 @@ body {
   max-width: 600px;
   padding: 0 30px
 }
+
+.index {
+  margin-bottom: 100px;
+  border-radius: 4px;
+  @media (min-width: 768px) {
+    background: rgba(#000, .8);
+    padding: 50px 0;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  a.list-group-item {
+    background: none;
+    color: #FFF;
+    border: 0;
+    padding: 0;
+    &:hover {
+      color: #BF0B24;
+    }
+    @media (max-width: 768px) {
+      background: rgba(#000, .8);
+      padding: 15px;
+      margin-bottom: 1px;
+    }
+    @media (min-width: 768px) {
+      text-align: right;
+      &:nth-child(n + 23) {
+        text-align: left;
+      }
+    }
+  }
+}
+
 
 .nowrap {
   white-space: nowrap;
@@ -48,17 +82,30 @@ body {
   font: 300 1.8em/1 'Roboto Condensed', sans-serif;
 }
 
-.list-group-item {
-  strong {
-    font: 700 1.2em/1 'Roboto', sans-serif;
+.list-group-item-title {
+  border: 0;
+  font: 700 1.2em/1 'Roboto', sans-serif;
+}
+
+.ingredients {
+  margin: 10px 0 20px;
+}
+
+.ingredient {
+  border: 0;
+  padding: .1rem 1.25rem;
+  &:nth-child(even) {
+    background: #F3F1DA;
+  }
+  &:last-child {
+    padding-bottom: 10px;
   }
 }
 
-@media (max-width: 1279px) {
-  .card-columns {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+.step {
+  border: 0;
+  &:nth-child(even) {
+    background: #F5E6DA;
   }
 }
 
@@ -70,18 +117,10 @@ body {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .card-columns {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
-  }
-}
-
-@media (min-width: 1921px) {
-  .card-columns {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
   }
 }
