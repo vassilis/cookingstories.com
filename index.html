@@ -17,7 +17,7 @@ layout: default
 <div class="container">
   <div class="card-columns">
     {% for recipe in site.data.recipes %}
-      <div class="card" id="{{ recipe.slugs[0] }}">
+      <div class="card recipe" id="{{ recipe.slugs[0] }}">
         <div class="card-block">
           <h4 class="card-title">{{ recipe.title.el }}</h4>
         </div>
