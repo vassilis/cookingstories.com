@@ -101,7 +101,9 @@ body {
   input {
     margin-right: 5px;
     position: relative;
-    top: 1px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -114,9 +116,10 @@ body {
 .ingredient,.step {
   border: 0;
   color: #000 !important;
+  margin: 0;
   &:hover {
-    background: #000 !important;
-    color: #FFF !important;
+    background: rgba(darkred, .35) !important;
+    // color: #FFF !important;
   }
   &:focus {
     background: #BF0B24 !important;
@@ -141,45 +144,27 @@ body {
   }
 }
 
-@mixin image($filename, $height) {
-  margin-top: $height + 20;
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0 - ($height + 20);
-    height: $height;
-    width: 100%;
-    border-radius: 4px;
-    background: url("/images/" + $filename) 50% 50%;
-    background-size: cover;
-  }
-}
+// @mixin image($filename, $height) {
+//   margin-top: $height + 20;
+//   &::before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: 0 - ($height + 20);
+//     height: $height;
+//     width: 100%;
+//     border-radius: 4px;
+//     background: url("/images/" + $filename) 50% 50%;
+//     background-size: cover;
+//   }
+// }
 
-.recipe {
-  position: relative;
-  // &:nth-child(3) {
-  //   @include image("8571093002_ccca645e3b_z.jpg", 300px);
-  // }
-  // &:nth-child(9) {
-  //   @include image("5886328620_a17cbb9308_z.jpg", 300px);
-  // }
-  // &:nth-child(15) {
-  //   @include image("8242418755_4920a55086_z.jpg", 300px);
-  // }
-  // &:nth-child(23) {
-  //   @include image("9944038444_b7d3319f40_z.jpg", 300px);
-  // }
-  // &:nth-child(28) {
-  //   @include image("11885745326_a079f02233_z.jpg", 350px);
-  // }
-  // &:nth-child(33) {
-  //   @include image("8191392386_7ce4dd2125_z.jpg", 350px);
-  // }
-  &:nth-child(8) {
-    @include image("8277426219_111d2a8530_z.jpg", 350px);
-  }
-  &:nth-child(38) {
-    @include image("5458325252_b8290d8074_z.jpg", 350px);
-  }
-}
+// .recipe {
+//   position: relative;
+//   &:nth-child(8) {
+//     @include image("8277426219_111d2a8530_z.jpg", 350px);
+//   }
+//   &:nth-child(38) {
+//     @include image("5458325252_b8290d8074_z.jpg", 350px);
+//   }
+// }
