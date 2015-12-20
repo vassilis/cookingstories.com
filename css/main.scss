@@ -96,7 +96,7 @@ body {
 .ingredient {
   padding: .1rem 1.25rem;
   &:nth-child(even) {
-    background: rgba(darkred, .07);
+    background: rgba(#BF0B24, .07);
   }
   input {
     margin-right: 5px;
@@ -109,7 +109,7 @@ body {
 
 .step {
   &:nth-child(even) {
-    background: rgba(darkred, .14);
+    background: rgba(#BF0B24, .14);
   }
 }
 
@@ -118,7 +118,7 @@ body {
   color: #000 !important;
   margin: 0;
   &:hover {
-    background: rgba(darkred, .35) !important;
+    background: rgba(#BF0B24, .35) !important;
     // color: #FFF !important;
   }
   &:focus {
@@ -168,3 +168,28 @@ body {
 //     @include image("5458325252_b8290d8074_z.jpg", 350px);
 //   }
 // }
+
+// https://css-tricks.com/snippets/sass/custom-scrollbars-mixin/
+@mixin scrollbars($size, $foreground-color, $background-color) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@include scrollbars(3px, #FFF, #000);
