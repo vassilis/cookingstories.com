@@ -324,11 +324,14 @@
 .notebook {
   position: relative;
   overflow: hidden;
-  background: var(--ink);
+  /* Deep navy that warms towards the heart: a soft red glow over a diagonal gradient. */
+  background:
+    radial-gradient(60% 90% at 82% 50%, rgba(160, 18, 32, 0.3), transparent 70%),
+    linear-gradient(135deg, #18213b 0%, var(--ink) 50%, #2a2142 100%);
   color: var(--paper);
 }
 
-/* The brush-stroke heart from the original site, drawn faintly behind the section. */
+/* The brush-stroke heart from the original site, in a deep red with a little glow. */
 .notebook::before {
   content: "";
   position: absolute;
@@ -337,18 +340,20 @@
   height: 86%;
   aspect-ratio: 726 / 701;
   transform: translateY(-50%) rotate(-8deg);
-  /* Used as a mask so the heart takes the section's own accent colour. */
-  background: var(--red-on-ink);
-  -webkit-mask: url("/heart.svg") center / contain no-repeat;
-  mask: url("/heart.svg") center / contain no-repeat;
-  opacity: 0.28;
+  /* The SVG is a mask, so the red gradient below is what shows through the brush strokes. */
+  background: linear-gradient(160deg, #ff4a3d 0%, #d6141f 50%, #9e0b16 100%);
+  -webkit-mask: url("/heart-brush.svg") center / contain no-repeat;
+  mask: url("/heart-brush.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 28px rgba(230, 30, 40, 0.5));
   pointer-events: none;
 }
 @media (max-width: 720px) {
   .notebook::before {
     right: -12%;
     height: 60%;
-    opacity: 0.16;
+    /* Sits behind the text on phones, so it stays quieter there. */
+    opacity: 0.4;
+    filter: none;
   }
 }
 .notebook p {
