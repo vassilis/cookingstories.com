@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Cooking Stories",
+    "description": "Cooking stories from all over the world. Find something to cook, keep notes in the margin and write down recipes of your own."
+  },
+  "nav": {
+    "recipes": "Recipes",
+    "world": "Around the world",
+    "notebook": "My notebook",
+    "signIn": "Sign in",
+    "language": "Language",
+    "admin": "Admin"
+  },
+  "home": {
+    "eyebrow": "Cooking stories from all over the world",
+    "title": "What are we cooking today?",
+    "intro": "Find something to cook in the collection, or write down a recipe of your own and decide who gets to see it.",
+    "browse": "Browse recipes",
+    "writeYourOwn": "Write your own",
+    "recipeOfTheDay": "Recipe of the day",
+    "openRecipe": "Open recipe",
+    "contents": "Contents",
+    "all": "All",
+    "worldEyebrow": "Around the world",
+    "worldTitle": "Where shall we cook from tonight?",
+    "worldIntro": "Browse recipes by country, or add one from yours.",
+    "worldEmpty": "No stories yet. Write the first one.",
+    "yourCorner": "Your corner of the world",
+    "notebookEyebrow": "Your notebook",
+    "notebookTitle": "Write down your own cooking stories",
+    "notebookIntro": "Your family’s recipes, or the dish you finally got right last night. Keep them to yourself or share them with everyone.",
+    "notebookCta": "Start your notebook",
+    "filterCategory": "Category",
+    "filterCountry": "Country",
+    "anyCountry": "All countries",
+    "matches": "{count} of {total} recipes",
+    "filterKitchen": "Kitchen",
+    "noOven": "No oven",
+    "filters": "Filters"
+  },
+  "recipe": {
+    "ingredients": "What you’ll need",
+    "method": "Method",
+    "ingredientCount": "{count} ingredients",
+    "stepCount": "{count} steps",
+    "needsOven": "Uses the oven",
+    "translatedFrom": "Translated from {language}",
+    "readOriginal": "Read the original",
+    "print": "Print",
+    "previous": "Previous",
+    "next": "Next",
+    "checked": "{done} of {total}"
+  },
+  "signIn": {
+    "title": "Sign in",
+    "intro": "We’ll email you a link. Click it and you’re in, no password needed.",
+    "email": "Email address",
+    "submit": "Email me a link",
+    "sending": "Sending…",
+    "sent": "Check your inbox. The link works for the next 10 minutes.",
+    "error": "Something went wrong sending the link. Please try again."
+  },
+  "categories": {
+    "starters": "Salads & starters",
+    "pasta": "Pasta & risotto",
+    "mains": "Mains",
+    "pies": "Pies & doughs",
+    "desserts": "Desserts"
+  },
+  "regions": {
+    "europe": "Europe",
+    "americas": "The Americas",
+    "asia": "Asia",
+    "middleEast": "Middle East",
+    "anywhere": "Wherever you are"
+  },
+  "footer": {
+    "tagline": "Cooking stories from all over the world"
+  },
+  "notFound": {
+    "title": "We couldn’t find that page",
+    "body": "The recipe may have moved, or it was never public.",
+    "back": "Back to all recipes"
+  },
+  "admin": {
+    "title": "Admin",
+    "recipes": "Recipes",
+    "edit": "Edit",
+    "allRecipes": "All recipes",
+    "viewPage": "View page",
+    "signedInAs": "Signed in as {email}",
+    "signOut": "Sign out",
+    "colTitle": "Recipe",
+    "colCategory": "Category",
+    "colCountry": "Country",
+    "colLanguages": "Languages",
+    "colStatus": "Status",
+    "machine": "machine translation",
+    "missing": "not written yet",
+    "textIn": "Text in",
+    "fieldTitle": "Title",
+    "fieldDescription": "Short description",
+    "fieldIngredients": "Ingredients",
+    "ingredientsHint": "One per line. Start a line with # to begin a section, for example “# For the glaze”.",
+    "fieldSteps": "Method",
+    "stepsHint": "One step per line.",
+    "details": "Details for every language",
+    "fieldCategory": "Category",
+    "fieldCountry": "Country code",
+    "countryHint": "Two letters, for example GR or IT. Leave it empty if you’re not sure.",
+    "fieldNeedsOven": "Uses the oven",
+    "fieldVisibility": "Who can see it",
+    "fieldReview": "Review",
+    "visibility": {
+      "private": "Only the author",
+      "link": "Anyone with the link",
+      "public": "Everyone"
+    },
+    "review": {
+      "pending": "Waiting for review",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "save": "Save changes",
+    "saved": "Saved. The public page already shows the change.",
+    "machineNote": "This text is a machine translation. Saving it marks it as checked by a person."
+  }
+}
