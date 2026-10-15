@@ -73,10 +73,12 @@ jobs:
           retention-days: 7
 
   docker:
-    name: Docker image builds
-    runs-on: ubuntu-latest
+    # The Hetzner server is an Arm64 (Ampere) CAX11, so build on GitHub's Arm runner:
+    # this checks the exact image Coolify builds on the server.
+    name: Docker image builds (arm64)
+    runs-on: ubuntu-24.04-arm
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - name: Build the production image Coolify will run
-        run: docker build --tag cookingstories:ci .
+        run: docker build --platform linux/arm64 --tag cookingstories:ci .
