@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "dev"
+      ],
+      "port": 3000
+    },
+    {
+      "name": "preview-build",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "BETTER_AUTH_URL=http://localhost:3200",
+        "EMAIL_DELIVERY=log",
+        "pnpm",
+        "exec",
+        "next",
+        "start",
+        "-p",
+        "3200"
+      ],
+      "port": 3200
+    }
+  ]
+}

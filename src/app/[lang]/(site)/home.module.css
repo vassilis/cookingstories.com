@@ -1,0 +1,380 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 56px;
+  padding-block: 48px 96px;
+}
+
+.heroText {
+  flex: 1 1 480px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.heroTitle {
+  font-size: clamp(44px, 6vw, 76px);
+  line-height: 1.02;
+}
+
+.heroIntro {
+  margin: 0;
+  max-width: 34em;
+  font-size: 19px;
+  color: var(--ink-soft);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.daySheet {
+  flex: 1 1 380px;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 40px 36px 36px 84px;
+  background: var(--sheet) var(--ruled);
+  box-shadow: var(--shadow-sheet);
+  transform: rotate(-1.5deg);
+}
+.placeholder {
+  min-height: 320px;
+}
+
+.marginLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 58px;
+  width: 2px;
+  background: var(--margin);
+}
+
+.dayTitle {
+  font-size: 36px;
+}
+
+.dayDescription {
+  margin: 0;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.meta {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.dayLink {
+  align-self: flex-start;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.contentsBand {
+  background: var(--sheet);
+  border-block: 1px solid var(--line);
+  padding-block: var(--space-section);
+}
+
+.contentsHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  margin-bottom: var(--space-title);
+}
+
+.sectionTitle {
+  font-size: clamp(36px, 4.4vw, 52px);
+}
+
+.contentsTools {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.filterBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--red);
+  color: var(--sheet);
+  font-size: 12px;
+  opacity: 1 !important;
+}
+
+.filters[hidden] {
+  display: none;
+}
+
+.matchCount {
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Sits closer to the title than the list does, so it reads as part of the heading. */
+  margin-top: calc(var(--space-title) / -2);
+  margin-bottom: var(--space-title);
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.chipRowLabel {
+  min-width: 88px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.chip {
+  background: var(--sheet);
+  font: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+}
+.chip span {
+  opacity: 0.7;
+}
+.chip:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.chip.chipActive {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.chip.chipActive:hover {
+  color: var(--paper);
+}
+
+.toc {
+  /* At most two columns; drops to one when a column would get narrower than 320px. */
+  columns: 2 320px;
+  column-gap: 80px;
+}
+
+.tocGroup {
+  break-inside: avoid;
+  padding-bottom: 48px;
+  scroll-margin-top: 24px;
+}
+
+.tocTitle {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--ink);
+  font-size: 26px;
+}
+.tocTitle span {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--red);
+}
+
+.tocList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tocLink {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 7px 0;
+  font-size: 16px;
+  line-height: 1.35;
+  color: var(--ink);
+  text-decoration: none;
+}
+.tocLink:hover {
+  color: var(--red);
+}
+
+.leader {
+  flex: 1 1 24px;
+  border-bottom: 1px dotted #a9b1c2;
+  transform: translateY(-4px);
+}
+.tocLink:hover .leader {
+  border-color: var(--red);
+}
+
+/* Recipes that don't match the chosen category or country fade back but stay clickable. */
+.dimmed {
+  opacity: 0.25;
+  transition: opacity 0.2s ease;
+}
+.tocGroup,
+.tocList li {
+  transition: opacity 0.2s ease;
+}
+
+.tocNumber {
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.sectionIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 720px;
+  margin-bottom: var(--space-title);
+}
+.sectionIntro p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.places {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 180px;
+  padding: 28px;
+  background: var(--sheet);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+}
+.place:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.placeEmpty {
+  background: transparent;
+  border: 1px dashed #a9b1c2;
+}
+.placeEmpty .placeName {
+  color: var(--muted);
+}
+
+.placeName {
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.placeExamples {
+  margin-top: auto;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.placeInvite {
+  margin-top: auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.notebook {
+  position: relative;
+  overflow: hidden;
+  /* Deep navy that warms towards the heart: a soft red glow over a diagonal gradient. */
+  background:
+    radial-gradient(60% 90% at 82% 50%, rgba(160, 18, 32, 0.3), transparent 70%),
+    linear-gradient(135deg, #18213b 0%, var(--ink) 50%, #2a2142 100%);
+  color: var(--paper);
+}
+
+/* The brush-stroke heart from the original site, in a deep red with a little glow. */
+.notebook::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: max(2%, calc(50% - 600px));
+  height: 86%;
+  aspect-ratio: 726 / 701;
+  transform: translateY(-50%) rotate(-8deg);
+  /* The SVG is a mask, so the red gradient below is what shows through the brush strokes. */
+  background: linear-gradient(160deg, #ff4a3d 0%, #d6141f 50%, #9e0b16 100%);
+  -webkit-mask: url("/heart-brush.svg") center / contain no-repeat;
+  mask: url("/heart-brush.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 28px rgba(230, 30, 40, 0.5));
+  pointer-events: none;
+}
+@media (max-width: 720px) {
+  .notebook::before {
+    right: -12%;
+    height: 60%;
+    /* Sits behind the text on phones, so it stays quieter there. */
+    opacity: 0.4;
+    filter: none;
+  }
+}
+.notebook p {
+  color: #d9dee8;
+}
+
+.notebookInner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px 64px;
+  padding-block: var(--space-section);
+}
+.notebookInner .sectionIntro {
+  margin-bottom: 0;
+}
+
+.notebookCta {
+  background: var(--paper);
+  border-color: var(--paper);
+  font-weight: 600;
+}

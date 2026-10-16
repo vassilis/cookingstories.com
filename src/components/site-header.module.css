@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 40px;
+  padding-block: 24px;
+}
+
+.logo {
+  font-family: var(--font-script);
+  font-size: 48px;
+  line-height: 1;
+  color: var(--ink);
+  text-decoration: none;
+}
+.logo:hover {
+  color: var(--ink);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+  font-size: 16px;
+}
+.nav > a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.nav > a:hover {
+  color: var(--red);
+}
+
+.accountPlaceholder {
+  display: inline-block;
+  width: 96px;
+  height: 44px;
+}

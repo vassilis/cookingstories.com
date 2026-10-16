@@ -1,0 +1,1284 @@
+{
+  "droseri-kotosalata": {
+    "title": "Fresh chicken salad",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "300 g chicken breast",
+          "150 g fennel",
+          "3 carrots",
+          "150 g yoghurt",
+          "4 tsp mayonnaise",
+          "salt"
+        ]
+      }
+    ],
+    "steps": [
+      "Boil the chicken in a pan of salted water.",
+      "Leave it to cool, then cut it into small pieces.",
+      "Grate the carrots and finely chop the fennel.",
+      "In a large bowl, mix all the ingredients (chicken, yoghurt, carrots, fennel, mayonnaise) and season with salt.",
+      "Put the bowl in the fridge for about an hour.",
+      "Serve the chicken salad on lettuce or red cabbage leaves!"
+    ]
+  },
+  "tonosalata-riziou": {
+    "title": "Tuna and rice salad",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1 cup rice",
+          "50 g rocket",
+          "¼ cabbage, finely chopped",
+          "1 carrot, grated",
+          "6-7 cherry tomatoes, halved",
+          "1 small red pepper",
+          "1 mozzarella, cut into small cubes",
+          "3 tbsp Parmesan",
+          "80-100 g tuna (1 tin)",
+          "olive oil",
+          "lemon or balsamic vinegar",
+          "salt"
+        ]
+      }
+    ],
+    "steps": [
+      "Boil the rice in a pan of salted water.",
+      "In a large salad bowl, mix all the vegetables, the mozzarella and the tuna, add 2-3 tbsp olive oil and season with salt.",
+      "Drain the rice and leave it to cool for 1-2 minutes.",
+      "Add it to the salad bowl and mix well with the other ingredients, adding 1-2 more tbsp olive oil.",
+      "Add the Parmesan.",
+      "Finish the dish with a little lemon or balsamic vinegar."
+    ]
+  },
+  "kokkines-pipergies-sto-fourno": {
+    "title": "Baked red peppers",
+    "description": "A spicy meze to whet the appetite.",
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "3 red peppers",
+          "200 g anthotyro",
+          "4 tbsp grated graviera",
+          "3 tbsp olive oil",
+          "12 tsp béchamel",
+          "½ tsp mint"
+        ]
+      }
+    ],
+    "steps": [
+      "Wash the peppers well, cut them in half lengthways and remove the seeds.",
+      "Heat the frying oil in a small saucepan.",
+      "Fry the peppers in the hot oil for 2 to 3 minutes, then place them on a plate lined with kitchen paper to cool.",
+      "Preheat the oven to 200°C.",
+      "In a bowl, mix the anthotyro with 3 tbsp graviera, the olive oil and the mint, and season with salt and pepper.",
+      "Lightly salt the peppers, which will have cooled by now.",
+      "Brush a small non-stick baking tin with oil and place the peppers in it.",
+      "Fill the pepper 'boats' with the anthotyro mixture.",
+      "Cover each 'boat' with 2 tsp béchamel and sprinkle with grated graviera.",
+      "Season lightly with pepper and bake for about 20 minutes."
+    ]
+  },
+  "eliokeftedakia": {
+    "title": "Olive meatballs",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "350 g mixed mince (pork and beef)",
+          "22 black olives",
+          "50 g rocket",
+          "1 onion",
+          "1 egg",
+          "7 tbsp breadcrumbs",
+          "2 tbsp tomato juice",
+          "2 tbsp olive oil",
+          "½ tsp salt",
+          "pepper",
+          "½ cup plain flour",
+          "oil for frying"
+        ]
+      }
+    ],
+    "steps": [
+      "Remove the stones from the olives and chop them finely.",
+      "Finely chop the onion and the rocket.",
+      "In a bowl, mix the mince, olives, onion, rocket and egg by hand, and add salt.",
+      "Add the breadcrumbs, tomato juice, olive oil and pepper, and knead until the mixture is light and fluffy.",
+      "Cover the bowl with cling film and put it in the fridge for 30 minutes.",
+      "Take the mince out of the fridge and, using 2 tablespoons at a time, shape it into round meatballs.",
+      "Fill a frying pan halfway with oil and heat it over a medium heat.",
+      "Tip the flour into a deep plate and roll the meatballs in it until evenly coated.",
+      "When the oil is hot, carefully add the meatballs (a few at a time) and fry them until well browned on both sides.",
+      "Remove them from the pan and place them on a plate lined with kitchen paper to absorb the excess oil.",
+      "Serve with freshly fried potatoes, or as a starter with a cool glass of ouzo!"
+    ]
+  },
+  "mpiftekia-lahanikon": {
+    "title": "Vegetable burgers",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "350 g mixed mince (pork and beef)",
+          "2 courgettes, grated",
+          "1 carrot, grated",
+          "1 onion, finely chopped",
+          "1 cup breadcrumbs",
+          "2 tbsp tomato juice",
+          "2 tbsp olive oil",
+          "1 tsp mustard",
+          "1 tsp salt",
+          "a little finely chopped parsley",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Mix all the ingredients well.",
+      "Adjust the amount of breadcrumbs depending on how malleable the mince is.",
+      "Put it in the fridge for about 15 minutes, covering the bowl with cling film.",
+      "Oil a non-stick baking tin and preheat the oven to 200°C.",
+      "Take the mince out of the fridge and shape the burgers, oiling your hands with a little oil.",
+      "Bake until well browned on both sides.",
+      "Serve with a generous mixed salad or a little rice."
+    ]
+  },
+  "polixromi-omeleta": {
+    "title": "Colourful omelette",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "4 eggs",
+          "1 courgette, cut into half-moons",
+          "1 potato, cut into small cubes",
+          "1 red pepper, cut into small squares",
+          "⅓ cup milk",
+          "3 tbsp Parmesan"
+        ]
+      }
+    ],
+    "steps": [
+      "Fry the potatoes, courgettes and peppers separately, season them with salt and pepper and leave them for a minute on a plate lined with kitchen paper to absorb the excess oil.",
+      "In a bowl, beat the eggs with the milk and Parmesan, adding a little salt and pepper.",
+      "In a wide non-stick frying pan, add the potatoes, courgettes and pepper and, over a low heat, pour in the egg mixture.",
+      "When the underside is cooked, carefully flip the omelette.",
+      "Serve hot, sprinkled with a soft melting cheese of your choice."
+    ]
+  },
+  "xortosoupa-me-avgolemono": {
+    "title": "Vegetable soup with avgolemono (egg and lemon)",
+    "description": "A very tasty soup that warms even the coldest winter days.",
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1 potato (medium)",
+          "2 courgettes",
+          "1 onion",
+          "1 carrot",
+          "1 tomato",
+          "1 coffee cup rice",
+          "2-3 tbsp olive oil",
+          "1 vegetable stock cube",
+          "2 eggs",
+          "⅓ cup lemon juice"
+        ]
+      }
+    ],
+    "steps": [
+      "Grate the courgettes and carrot and finely chop the onion.",
+      "Cut the potato and tomato into cubes.",
+      "Fill a medium pan halfway with water and add the vegetables, rice and stock cube.",
+      "Season with salt and pepper and leave to boil over a medium heat.",
+      "When the rice is ready (after about 20 minutes), make sure the vegetables are cooked too and take the pan off the heat.",
+      "Now make the avgolemono by beating the eggs with the lemon juice in a bowl.",
+      "Add a little of the soup liquid to the avgolemono and mix well.",
+      "Pour the avgolemono into the soup and stir."
+    ]
+  },
+  "spanaki-sto-fourno": {
+    "title": "Baked spinach",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "½ kg spinach",
+          "1 onion",
+          "5 tbsp olive oil",
+          "6 tbsp grated kefalograviera",
+          "1 sheet (280 g) puff pastry",
+          "300 g ladotyri",
+          "6 tbsp béchamel",
+          "1½ cups water",
+          "1 tsp finely chopped dill"
+        ]
+      }
+    ],
+    "steps": [
+      "Finely chop the onion.",
+      "Heat the olive oil in a pan over a medium heat and lightly sauté the onion.",
+      "Add the spinach, sauté it lightly too, and pour in the water.",
+      "Season with salt and pepper and add the dill.",
+      "Stirring now and then, cook the spinach until it is done and has absorbed all the liquid.",
+      "Take it off the heat, tip it onto a platter and cut it up with a knife.",
+      "Preheat the oven to 200°C.",
+      "Grease a small baking tin or a Pyrex dish well.",
+      "Lay the puff pastry sheet in the tin, covering the base and sides.",
+      "Spread the spinach evenly over the pastry and sprinkle with the kefalograviera.",
+      "Grate the ladotyri or cut it into small cubes.",
+      "Mix the ladotyri with the béchamel and spread the mixture over the spinach.",
+      "Bake for about 30 minutes, take it out of the oven and leave it to cool for 5 to 10 minutes before serving."
+    ]
+  },
+  "karmponara": {
+    "title": "Carbonara",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "300 g spaghetti",
+          "100 g bacon, finely chopped",
+          "2 egg yolks",
+          "½ cup white wine",
+          "⅓ cup milk",
+          "1 tbsp olive oil",
+          "4 tbsp Parmesan",
+          "1-2 tbsp butter (optional)"
+        ]
+      }
+    ],
+    "steps": [
+      "Put the spaghetti on to boil in a pan.",
+      "In a non-stick frying pan, sauté the bacon with a tablespoon of olive oil, deglaze with the white wine and take it off the heat.",
+      "Beat the yolks with the milk in a bowl and season with salt and pepper.",
+      "When the spaghetti is ready, drain it and add it to the frying pan.",
+      "Stir with the bacon over a low heat for less than 1 minute, then turn off the heat.",
+      "For a creamier carbonara, add the butter at this stage.",
+      "Slowly pour in the yolks and milk, stirring very well, and add the Parmesan.",
+      "The carbonara is ready to serve."
+    ]
+  },
+  "tortellinia-me-parmezana-kai-krema-galaktos": {
+    "title": "Tortellini with Parmesan and cream",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "400 g fresh tortellini filled with spinach or cheese",
+          "3 tbsp butter",
+          "1 onion, finely chopped",
+          "8 tbsp grated Parmesan",
+          "200 ml cream",
+          "1 coffee cup white wine",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Boil the tortellini and drain them.",
+      "Sauté the onion in the butter and deglaze with the white wine.",
+      "Leave it to boil for a few minutes and add the cream.",
+      "Season with salt and pepper and leave to simmer for another 3-4 minutes.",
+      "Pour the cream sauce over the tortellini, which you have placed in a small baking tin.",
+      "Sprinkle the top with the Parmesan and put the tin in the oven for a few minutes, until the Parmesan turns golden."
+    ]
+  },
+  "saltsa-me-kima": {
+    "title": "Meat sauce",
+    "description": "A favourite sauce to go with pasta, adding plenty of flavour.",
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "300 g mixed mince (pork and beef)",
+          "1 medium onion",
+          "1½ cups peeled tomatoes",
+          "3 tbsp white wine",
+          "5 tbsp olive oil",
+          "½ tsp cinnamon",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Finely chop the onion.",
+      "In a pan, lightly sauté the onion over a medium heat.",
+      "Add the mince, season with salt and pepper and sauté for a few minutes.",
+      "Add the cinnamon and deglaze the mince with the white wine.",
+      "Leave to bubble for 2-3 minutes, add the tomatoes and season with salt and pepper.",
+      "Cook over a medium heat until the excess liquid has been absorbed, for about 20 to 25 minutes."
+    ]
+  },
+  "risoto-me-manitaria-champignon": {
+    "title": "Champignon mushroom risotto",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "200 g rice",
+          "150 g champignon mushrooms, thinly sliced",
+          "1 onion, finely chopped",
+          "1 stock cube",
+          "1 coffee cup white wine",
+          "2 tbsp salty cheese",
+          "1 litre water",
+          "olive oil",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Heat the oil and lightly sauté the onion.",
+      "In another pan, heat the water and add the stock cube.",
+      "Add the mushrooms and then the rice.",
+      "Stir over a low heat and deglaze with the white wine.",
+      "Add enough stock from the other pan to cover the rice.",
+      "Leave it to cook until all the liquid is absorbed and add a little salt and pepper.",
+      "Keep adding stock in small amounts until the rice is tender.",
+      "When the rice is cooked, add the grated salty cheese.",
+      "For a creamier risotto, add a tablespoon of butter just before taking it off the heat."
+    ]
+  },
+  "risoto-me-safran": {
+    "title": "Saffron risotto",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "200 g rice",
+          "1 onion",
+          "1.5 g saffron",
+          "1 stock cube",
+          "3 tbsp Parmesan",
+          "1 coffee cup white wine",
+          "4-5 tbsp olive oil",
+          "1 litre water"
+        ]
+      }
+    ],
+    "steps": [
+      "Bring the water to the boil in a pan and add the stock cube.",
+      "In another pan, heat the olive oil over a medium heat.",
+      "Add the rice and sauté it lightly.",
+      "Deglaze with white wine.",
+      "Add enough stock from the other pan to cover the rice.",
+      "Leave it to cook until all the liquid is absorbed and add a little salt and pepper.",
+      "Keep adding stock in small amounts until the rice is tender.",
+      "When the rice is cooked, add the saffron and stir well.",
+      "Add the Parmesan, stir, and add a tablespoon of butter if you want a creamier risotto.",
+      "Take it off the heat and serve with Parmesan sprinkled on top."
+    ]
+  },
+  "italiko-pastitsio-me-tiria-kai-manitaria": {
+    "title": "Italian pastitsio with cheese and mushrooms",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "400 g lasagne sheets",
+          "250 g anthotyro",
+          "250 g mozzarella",
+          "100 g grated Parmesan",
+          "150 g gorgonzola",
+          "360 g (2 tins) mushrooms",
+          "500 ml béchamel",
+          "3 tbsp olive oil"
+        ]
+      }
+    ],
+    "steps": [
+      "Cut the mozzarella into thin strips and season with salt and pepper.",
+      "In a bowl, mix the anthotyro with 3 tbsp olive oil to soften it, and season with salt and pepper.",
+      "Drain the mushrooms of their oil and tip them onto a plate.",
+      "Preheat the oven to 180°C.",
+      "Butter a rectangular baking tin well.",
+      "In a pan of salted water, boil the lasagne sheets for 7-8 minutes, adding 4 to 5 at a time. Lift them out of the pan with a spatula, taking care not to break them.",
+      "Cover the base of the tin with 3-4 lasagne sheets (depending on the size of your tin).",
+      "Spread over ⅓ of the mozzarella, ⅓ of the gorgonzola, ⅓ of the mushrooms and ¼ of the Parmesan.",
+      "Add 5-6 tbsp béchamel and cover with a layer of lasagne.",
+      "Repeat the same process another 3 times.",
+      "Cover the last (fourth) layer with the remaining béchamel and Parmesan.",
+      "Season with pepper and sprinkle with freshly grated nutmeg.",
+      "Bake for 20-25 minutes, take it out of the oven and leave it to cool for half an hour before serving, so that it cuts more easily."
+    ]
+  },
+  "penes-me-kapnisto-solomo": {
+    "title": "Penne with smoked salmon",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "250 g penne",
+          "100 g smoked salmon",
+          "50 g rocket",
+          "3 tbsp cream",
+          "6 tbsp olive oil",
+          "2 tbsp white wine"
+        ]
+      }
+    ],
+    "steps": [
+      "Put the penne on to boil in salted water.",
+      "Cut the smoked salmon into long strips and finely chop the rocket.",
+      "In a deep non-stick frying pan, heat the olive oil over a low heat.",
+      "Add the salmon, sauté it lightly and deglaze with the wine.",
+      "Add the cream and season with salt and pepper.",
+      "Leave the cream to bubble for 2-3 minutes, add the rocket and take the pan off the heat.",
+      "Drain the penne, add them to the pan and stir well."
+    ]
+  },
+  "penes-me-kolokitha-kai-xoriatiko-loukaniko": {
+    "title": "Penne with pumpkin and village sausage",
+    "description": "A wonderful winter dish.",
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "200 g penne",
+          "150 g village sausage",
+          "150 g pumpkin",
+          "1 onion",
+          "1 tbsp fresh parsley, finely chopped",
+          "6 tbsp olive oil",
+          "⅓ cup white wine"
+        ]
+      }
+    ],
+    "steps": [
+      "Add the penne to a pan of boiling salted water.",
+      "Finely chop the onion, cut the sausage into small pieces and grate the pumpkin.",
+      "In a deep frying pan, heat the oil over a medium heat.",
+      "Add the onion and sauté lightly.",
+      "Add the sausage and fry for a few minutes until browned.",
+      "Add the pumpkin and the chopped parsley, mix well and pour in the wine.",
+      "Leave to bubble for 1 to 2 minutes and add half a glass of water.",
+      "Keeping the heat medium, cook the sausage and pumpkin until most of the liquid has been absorbed, then lower the heat.",
+      "Drain the penne and add them to the frying pan.",
+      "Mix well and take the pan off the heat.",
+      "Serve with plenty of grated graviera."
+    ]
+  },
+  "penes-me-kolokithakia-kai-karota-ston-fourno": {
+    "title": "Baked penne with courgettes and carrots",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "500 g penne",
+          "3 carrots",
+          "2 large courgettes",
+          "250 ml cream",
+          "½ cup white wine",
+          "olive oil",
+          "Parmesan",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Put the penne on to boil in a pan.",
+      "Grate the courgettes and carrots.",
+      "In another pan, sauté the carrots and courgettes in a little oil (after seasoning them with salt and pepper) and deglaze with the wine.",
+      "Leave it to absorb for a few minutes and add the cream, with salt and pepper. When the sauce starts to bubble, take the pan off the heat.",
+      "Preheat the oven to 180°C.",
+      "When the penne are cooked, drain them and mix them with the vegetable sauce in a small baking tin, together with 2-3 tbsp grated Parmesan. Before putting it in the oven, sprinkle over a little more Parmesan (as it melts, it will form a crust over the penne).",
+      "Bake for about 15 minutes.",
+      "Serve hot with a cool glass of white wine of your choice."
+    ]
+  },
+  "zimarika-me-kotopoulo-kai-kokkino-laxano": {
+    "title": "Pasta with chicken and red cabbage",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "200 g pasta (shells)",
+          "150 g chicken breast fillets",
+          "150 g red cabbage",
+          "6 tbsp olive oil",
+          "½ cup white wine"
+        ]
+      }
+    ],
+    "steps": [
+      "Add the shells to a pan of boiling salted water.",
+      "Cut the chicken fillets into thin strips and season with salt and pepper.",
+      "Wash the cabbage well, then finely chop it.",
+      "In a deep frying pan, heat the oil over a medium heat and add the chicken.",
+      "Leave it to brown well and add the chopped cabbage.",
+      "Stir for 1-2 minutes, add a little salt and pepper and pour in the wine.",
+      "Lower the heat and leave to simmer until the pasta is cooked.",
+      "Drain the shells and add them to the frying pan with the chicken and cabbage.",
+      "Mix well and take off the heat.",
+      "Sprinkle with freshly grated Parmesan and serve immediately."
+    ]
+  },
+  "kokkinistes-soupies-me-kofto-makaronaki": {
+    "title": "Cuttlefish in tomato sauce with short macaroni",
+    "description": "A very tasty way to combine pasta and seafood.",
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "500 g cleaned cuttlefish",
+          "250 g short macaroni",
+          "1 onion, finely chopped",
+          "½ cup white wine",
+          "1 cup chopped tomatoes",
+          "5 tbsp olive oil"
+        ]
+      }
+    ],
+    "steps": [
+      "Cut the cuttlefish into rings and season with salt and pepper.",
+      "Add the olive oil to a pan and lightly sauté the onion.",
+      "Add the cuttlefish, stir well and deglaze with the wine.",
+      "Add two glasses of water and leave to simmer over a low heat.",
+      "Cuttlefish takes a while to soften, so leave it to simmer for at least an hour and a half, adding a little water now and then so there is always some sauce.",
+      "When the cuttlefish has softened, add the tomatoes and season with salt and pepper.",
+      "In another pan, boil the macaroni in salted water.",
+      "Five minutes before they finish cooking, drain them and add them to the pan with the cuttlefish.",
+      "Leave them to cook with the cuttlefish for five to six minutes, always over a low heat and stirring often so they don't stick, then take the pan off the heat."
+    ]
+  },
+  "xulopites-me-manitaria-kai-anthotiro": {
+    "title": "Hilopites (egg noodles) with mushrooms and anthotyro",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1 cup short hilopites",
+          "1 tin (180 g) mushrooms",
+          "2 tbsp anthotyro",
+          "⅓ cup white wine",
+          "2 cups water"
+        ]
+      }
+    ],
+    "steps": [
+      "Put the mushrooms with their oil in a shallow pan.",
+      "Season with salt and pepper and sauté lightly over a medium heat.",
+      "Add the hilopites and salt, sauté for 1 minute and pour in the wine.",
+      "Leave them to absorb the wine, stirring constantly so they don't stick, and add the water.",
+      "Boil for about 10 minutes, stirring now and then, then add the anthotyro.",
+      "Stir for 1-2 minutes and take the pan off the heat.",
+      "Serve immediately with plenty of freshly grated kefalotyri."
+    ]
+  },
+  "mpakaliaros-me-ntomatinia-kai-elies": {
+    "title": "Cod with cherry tomatoes and olives",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "2 cod fillets of 100 g each (frozen, not salted)",
+          "10 cherry tomatoes",
+          "14 black olives (stoned)",
+          "5 tbsp olive oil",
+          "1 cup rice",
+          "1 tbsp fresh parsley",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Add the rice to a pan of boiling salted water.",
+      "Cut the cherry tomatoes in half and lightly salt them.",
+      "Slice the olives lengthways.",
+      "In a non-stick frying pan, add the oil, cherry tomatoes, olives and cod fillets (without defrosting them), and season with salt and pepper.",
+      "Cook over a low heat for about 20 minutes, turning the fillets halfway through the cooking time so they cook evenly on both sides.",
+      "Add the chopped parsley to the pan and take it off the heat.",
+      "Drain the rice, which will have cooked by now.",
+      "Plate up each portion with a cod fillet, cherry tomatoes and olives, and garnish with a little rice moistened with the juices left by the cod and the other ingredients in the pan."
+    ]
+  },
+  "fileta-kotopoulou-pane": {
+    "title": "Breaded chicken fillets",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "250 g chicken breast fillets",
+          "1 egg",
+          "½ cup breadcrumbs",
+          "⅓ cup olive oil",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Season the fillets with salt and pepper.",
+      "In a deep plate, lightly beat the egg with a fork and dip the chicken fillets in it.",
+      "In a large non-stick frying pan, heat the olive oil over a medium heat.",
+      "Dip the fillets in the breadcrumbs, which you have tipped into a second plate.",
+      "Fry each side of the fillets in hot oil for 5 to 10 minutes, until golden.",
+      "Remove them from the pan and place them on a plate lined with kitchen paper to drain.",
+      "Serve hot, with mashed potato or rice."
+    ]
+  },
+  "kotopoulo-se-saltsa-gkorgkotzolas-me-gnocchi": {
+    "title": "Chicken in gorgonzola sauce with gnocchi",
+    "description": "A dish for lovers of unique flavours!",
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "350 g chicken fillets",
+          "150 g gorgonzola",
+          "5 tbsp olive oil",
+          "4 tbsp white wine",
+          "300 g gnocchi",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Season the chicken fillets with salt and pepper.",
+      "In a large frying pan, heat the olive oil over a medium heat.",
+      "Add the fillets and cook until golden on both sides.",
+      "Add the wine and leave to bubble for 1 to 2 minutes.",
+      "Lower the heat and add the gorgonzola, cut into pieces.",
+      "Stir with a wooden fork until the gorgonzola has melted.",
+      "Add the gnocchi to a pan of boiling salted water and cook according to the time on the packet (4 to 5 minutes is usually enough).",
+      "Meanwhile, simmer the fillets until the sauce thickens.",
+      "Drain the gnocchi, add them to the frying pan with the chicken and stir.",
+      "Take the pan off the heat and serve."
+    ]
+  },
+  "mprizoles-sto-alouminoxarto": {
+    "title": "Pork chops in foil",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "2 pork chops",
+          "2 medium potatoes",
+          "2 thick slices of fresh tomato",
+          "2 slices of feta",
+          "4 large pieces of aluminium foil",
+          "olive oil",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C.",
+      "For each chop, take two long pieces of foil and lay them to form a cross.",
+      "Place each chop in the centre, after seasoning it with salt and pepper.",
+      "Top each chop with a potato cut into large cubes, a slice of the cheese and a slice of tomato.",
+      "Add 1-2 tbsp oil to each, then close the foil like a pouch.",
+      "Place the parcels in a small baking tin and put them in the oven.",
+      "Bake for about an hour and, for the last 15-20 minutes before taking them out, open the foil a little so the tops brown too.",
+      "Serve each one on a plate without removing it from the foil."
+    ]
+  },
+  "xoirines-mprizoles-me-kremmudia-kai-rizi": {
+    "title": "Pork chops with onions and rice",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "2 pork chops",
+          "1 large onion",
+          "1 cup rice",
+          "⅓ cup olive oil",
+          "½ cup white wine",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Peel the onion and cut it into 1 cm rings.",
+      "Cook the rice in a pan of boiling salted water.",
+      "Take a large, deep frying pan and heat the olive oil over a medium heat.",
+      "Add the onions, season with salt and pepper and sauté lightly.",
+      "Season the chops with salt and pepper and add them to the pan.",
+      "Leave each side to sauté for 2-3 minutes and add the wine.",
+      "Keeping the heat medium, cook the chops, turning every so often, until they have absorbed the wine.",
+      "When they look ready, lower the heat and brown them for 2 minutes.",
+      "Remove the chops and half the onions from the pan.",
+      "Drain the rice and add it to the pan. Mix it well with the juices and the onions that remain.",
+      "Serve immediately, sprinkling the rice with freshly grated Parmesan."
+    ]
+  },
+  "prasina-fasolakia-me-tono": {
+    "title": "Green beans with tuna",
+    "description": "A light but very nourishing dish.",
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "300 g green beans",
+          "2 tomatoes",
+          "1 tin (100 g) tuna in oil",
+          "8 tsp anthotyro",
+          "juice of ½ lemon",
+          "4 tbsp olive oil",
+          "½ tsp oregano",
+          "salt",
+          "pepper"
+        ]
+      }
+    ],
+    "steps": [
+      "Boil the green beans in salted water for 10-15 minutes (take care not to overcook them).",
+      "Drain them and leave for 5 minutes until completely drained.",
+      "Cut the tomatoes into cubes.",
+      "In a salad bowl, put the green beans, tomato and the tuna, drained of its oil.",
+      "Season with salt and pepper and add the oregano, olive oil and lemon juice.",
+      "Mix well and add the anthotyro.",
+      "Cover the bowl with cling film and put it in the fridge for 15 minutes."
+    ]
+  },
+  "tiropita-tis-stigmis": {
+    "title": "Quick cheese pie",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "½ kg (2 sheets) frozen puff pastry",
+          "200 g grated feta",
+          "100 g anthotyro",
+          "4 tbsp cream",
+          "1 egg yolk"
+        ]
+      }
+    ],
+    "steps": [
+      "Defrost the puff pastry sheets.",
+      "Preheat the oven to 200°C.",
+      "Butter your baking tin well.",
+      "Carefully lay one sheet on the buttered base of the tin.",
+      "In a bowl, mix the cheeses well with the cream and season with salt and pepper.",
+      "Spread the mixture evenly over the sheet and cover with the other sheet, folding the edges inwards.",
+      "Brush the surface of the pastry with the egg yolk and put the tin in the oven for about 25 minutes, or until the pastry is golden."
+    ]
+  },
+  "manitaropita": {
+    "title": "Mushroom pie",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "250 g strained yoghurt",
+          "4 tbsp plain flour",
+          "3 eggs",
+          "2 tbsp butter",
+          "800 g mushrooms, sliced",
+          "400 g grated ladotyri"
+        ]
+      }
+    ],
+    "steps": [
+      "Mix all the ingredients in a deep bowl and put them in a small baking tin for 1 hour at 200°C."
+    ]
+  },
+  "tarta-me-tiria-kai-kremmidia": {
+    "title": "Cheese and onion tart",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "2 cups plain flour",
+          "8 tbsp butter",
+          "½ tsp salt",
+          "1 onion, finely chopped",
+          "2 cups grated regato cheese",
+          "1½ cups cream",
+          "2 eggs"
+        ]
+      }
+    ],
+    "steps": [
+      "In a bowl, work all the pastry ingredients together, adding 1 to 2 tbsp water until the dough is soft.",
+      "Press the dough into a tart tin or a round baking tin.",
+      "Sauté the onion in a little butter and spread it in the tart tin.",
+      "Cover with the cheese.",
+      "Beat the eggs and add the cream and the salt.",
+      "Pour the mixture over the cheese and put it in the oven.",
+      "Bake at 180°C for about 40 minutes."
+    ]
+  },
+  "almires-krepes-fantasia": {
+    "title": "Savoury crepes fantasia",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "2 large crepes",
+          "6 cherry tomatoes",
+          "6 slices of air-dried salami",
+          "80 g kasseri",
+          "50 g lettuce",
+          "50 g red cabbage",
+          "4 black olives"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C.",
+      "Cut the cherry tomatoes into quarters and lightly salt them.",
+      "Cut the kasseri into thin slices.",
+      "Finely chop the lettuce and red cabbage.",
+      "Stone the olives and cut them into thin slices.",
+      "Cover half of each crepe with half the kasseri.",
+      "Divide the lettuce, red cabbage and olives between the two crepes, covering the kasseri you have just added.",
+      "Fold the crepes like an envelope and place them in a non-stick baking tin.",
+      "Bake for about 5 minutes, until the kasseri melts.",
+      "Serve hot with a spoonful of Russian salad."
+    ]
+  },
+  "zimi-gia-krepes": {
+    "title": "Crepe batter",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1 cup flour",
+          "1 cup milk",
+          "1 egg",
+          "1 pinch of salt",
+          "1 cup melted butter"
+        ]
+      }
+    ],
+    "steps": [
+      "Whisk the flour with the milk, egg and salt until it becomes a batter.",
+      "Brush a non-stick frying pan with butter and heat it over a medium heat.",
+      "Take a small amount of the batter (about one ladle) and carefully pour it into the pan so that it covers the whole surface.",
+      "Leave the underside to cook for 1 to 2 minutes until golden, then carefully flip the crepe so that it doesn't break.",
+      "Cook the other side for 1 to 2 minutes and remove it from the pan.",
+      "Repeat the same process until the batter is used up.",
+      "Serve with a sweet or savoury filling.",
+      "You can keep the crepes in the fridge for a few days, placing a piece of kitchen paper between them."
+    ]
+  },
+  "zimi-gia-vasi-pitsas": {
+    "title": "Pizza base dough",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "25 g fresh yeast",
+          "2 cups flour",
+          "½ cup lukewarm water",
+          "2 tbsp olive oil",
+          "2 tsp sugar",
+          "1 tsp salt"
+        ]
+      }
+    ],
+    "steps": [
+      "In a large bowl, dissolve the yeast in the lukewarm water and leave for five minutes.",
+      "Add 1½ cups flour, the sugar, the salt and the olive oil to the bowl.",
+      "Oil your hands with a little olive oil and mix very well.",
+      "It will stick to your hands at first, so keep kneading, adding a little flour at a time, until the dough is easy to shape.",
+      "Cover the bowl with a cotton towel and put it in the oven (without switching it on) for at least two hours.",
+      "After two hours the dough will have risen. Take a large non-stick baking tin and grease it well.",
+      "Oil your hands well too and spread the dough evenly in the tin."
+    ]
+  },
+  "keik-portokaliou-me-glaso-portokali": {
+    "title": "Orange cake with orange glaze",
+    "description": "A very tasty cake to sweeten the morning and go with an afternoon coffee.",
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1¼ cups self-raising flour",
+          "3 eggs (lightly beaten)",
+          "125 g butter (at room temperature)",
+          "⅓ cup milk",
+          "1 tsp baking powder",
+          "2 tsp orange zest"
+        ]
+      },
+      {
+        "title": "For the glaze",
+        "items": [
+          "1 cup icing sugar",
+          "2 tbsp orange zest",
+          "15 g butter at room temperature"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C.",
+      "Butter the baking tin (21 x 14 cm).",
+      "Beat the flour, baking powder, butter and sugar in a mixer until smooth.",
+      "Add the eggs, milk and orange zest and beat in the mixer for another minute or so.",
+      "Pour the mixture into the buttered tin and bake for about 50 minutes.",
+      "After 50 minutes, take the cake out of the oven and leave it to cool for 5 minutes.",
+      "Now make the glaze. Put all the ingredients in a non-stick saucepan and stir over a low heat until you have a smooth cream.",
+      "Carefully pour it over the cake (which you have placed on a platter) and leave it to cool for about 30 minutes."
+    ]
+  },
+  "keik-me-marmelada-fraoula": {
+    "title": "Cake with strawberry jam",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1 cup self-raising flour",
+          "125 g butter at room temperature",
+          "1 tsp baking powder",
+          "3 eggs (lightly beaten)",
+          "½ cup sugar",
+          "1 sachet vanilla",
+          "½ cup strawberry jam",
+          "icing sugar"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C.",
+      "Butter the baking tin (21 x 14 cm).",
+      "Beat the butter and sugar in a mixer until smooth.",
+      "Add the eggs and mix them into the mixture.",
+      "Add the flour, baking powder and vanilla and beat in the mixer for about 1 minute.",
+      "Pour the mixture into the tin and bake for about 20 minutes.",
+      "When the cake is ready, take it out of the oven and leave it to cool for at least 5 minutes.",
+      "Turn it out onto a platter and, very carefully, cut it horizontally into two equal layers with a long knife.",
+      "Carefully lift off the top layer so that it doesn't break, and spread the jam over the top of the bottom layer.",
+      "Just as carefully, put the top layer back and dust the whole cake with icing sugar."
+    ]
+  },
+  "zesti-milopita": {
+    "title": "Warm apple pie",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "3 large apples",
+          "2 tbsp sugar",
+          "1 tsp cinnamon",
+          "2 cups flour",
+          "1 tsp baking powder",
+          "125 g butter at room temperature",
+          "¾ cup sugar",
+          "2 eggs",
+          "1 sachet vanilla",
+          "baking parchment"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C.",
+      "Grease the baking tin (21 x 14 cm) well and line it with baking parchment.",
+      "Sprinkle the base of the tin with the 2 tbsp sugar mixed with the cinnamon.",
+      "Peel the apples and cut them into quarters.",
+      "Arrange them evenly over the sugar.",
+      "In a large bowl, beat the sugar and butter with a mixer. Add the eggs, flour, baking powder and vanilla and keep mixing until smooth.",
+      "Carefully pour the mixture over the apples and bake the pie for about 50 minutes.",
+      "Take it out of the oven and leave it to cool for 5-10 minutes.",
+      "Turn the tin upside down onto a platter and remove the parchment.",
+      "Serve sprinkled with a little cinnamon."
+    ]
+  },
+  "sfoliatakia-me-krema-kai-milo": {
+    "title": "Puff pastries with cream and apple",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1 frozen puff pastry sheet",
+          "1 apple",
+          "2½ tbsp sugar",
+          "3 tbsp mascarpone",
+          "½ tsp cinnamon",
+          "2 tbsp dark chocolate chips"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C.",
+      "Defrost the puff pastry sheet.",
+      "Brush a 6-hole cupcake tin well with oil.",
+      "Roll out the sheet and cut 6 circles of 11 cm.",
+      "Place each circle in a hole of the tin, pressing lightly so that it covers the base and sides.",
+      "In a bowl, mix the mascarpone with 1 tbsp sugar using a spoon.",
+      "Peel the apple, cut it into quarters and then into thin slices.",
+      "In a second bowl, mix the apple slices with the cinnamon, the chocolate chips and 1½ tbsp sugar.",
+      "Put 1½ tsp of the mascarpone mixture in each hole.",
+      "Divide the apple mixture between the holes, covering the mascarpone.",
+      "Bake for about 25 to 30 minutes, take them out of the oven and leave them to cool for 5 minutes before removing them from the tin."
+    ]
+  },
+  "tiramisou": {
+    "title": "Tiramisu",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "250 g savoiardi (sponge fingers)",
+          "500 g mascarpone",
+          "3 eggs (yolks separated from whites)",
+          "80 g sugar",
+          "6 coffee cups of espresso",
+          "a little milk",
+          "cocoa powder"
+        ]
+      }
+    ],
+    "steps": [
+      "In a bowl, beat the egg yolks with the sugar using a mixer, then add the mascarpone and mix until smooth.",
+      "In another bowl, whisk the egg whites (meringue) and slowly fold them into the first mixture.",
+      "In a deep plate, mix the espresso with a little milk if you want a less intense coffee flavour.",
+      "Lightly dip the savoiardi in the coffee and milk mixture and make the first layer in your tin.",
+      "Spread some of the cream over the savoiardi and repeat in this order, savoiardi first and then cream, making sure to finish with a thin layer of cream on top of the dessert.",
+      "Sift cocoa powder over the cream and put the dessert in the fridge for 4 hours."
+    ]
+  },
+  "cheesecake-rodakino": {
+    "title": "Peach cheesecake",
+    "description": null,
+    "ingredients": [
+      {
+        "title": "For the base",
+        "items": [
+          "300 g crushed petit beurre biscuits",
+          "250 g melted butter"
+        ]
+      },
+      {
+        "title": "For the filling",
+        "items": [
+          "500 g mascarpone",
+          "100 g Philadelphia",
+          "1 egg",
+          "1 coffee cup sugar"
+        ]
+      },
+      {
+        "title": "For the topping",
+        "items": [
+          "250 g peach jam (1 small jar)"
+        ]
+      }
+    ],
+    "steps": [
+      "In a bowl, mix the base ingredients. Using your palms, spread and press the mixture to cover the base of a springform tin (26 cm).",
+      "Using a mixer, beat the mascarpone, Philadelphia, sugar and egg yolk until smooth.",
+      "In another bowl, beat the egg white with the mixer until frothy and slowly fold it into the mascarpone mixture.",
+      "Pour the new mixture over the biscuit base and leave it in the fridge for 3-4 hours.",
+      "With gentle movements, spread the jam over the mascarpone mixture and leave it in the fridge for another hour.",
+      "Once chilled, take it out of the fridge, unclip the ring of the tin and carefully remove the cheesecake."
+    ]
+  },
+  "soufledakia-sokolatas": {
+    "title": "Little chocolate soufflés",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "200 g dark chocolate",
+          "250 g butter",
+          "1 cup sugar",
+          "5 eggs",
+          "3 tbsp flour"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C.",
+      "Butter a 12-hole cupcake tin well, then dust it with flour.",
+      "In a small non-stick saucepan, melt the dark chocolate with the butter over a low heat, then take it off the heat and leave it to cool a little.",
+      "Separate the egg yolks from the whites.",
+      "Beat the yolks with the sugar and then add the chocolate mixture, which will have cooled slightly by now.",
+      "Whisk the egg whites for 3-4 minutes until they form a frothy mousse (meringue).",
+      "Fold the first mixture into the meringue and beat in the mixer for about two more minutes.",
+      "Fill each hole of the tin two-thirds full with the mixture you have just made and bake for about 25 minutes.",
+      "Wait 5 minutes before taking them out of the tin and serve warm with a little whipped cream."
+    ]
+  },
+  "muffin-me-kardia-sokolatas": {
+    "title": "Muffins with a chocolate heart",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "450 g flour",
+          "200 ml milk",
+          "90 g sugar",
+          "2 eggs",
+          "2 tsp baking powder",
+          "70 g butter at room temperature",
+          "1 sachet vanilla",
+          "12 tbsp chocolate hazelnut spread"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C.",
+      "Butter your muffin tin well.",
+      "In a bowl, beat the sugar and eggs with a mixer.",
+      "Add the remaining ingredients (flour, butter, milk, baking powder and vanilla) and beat in the mixer for another 1-2 minutes.",
+      "Put 3 tbsp of the mixture in each muffin hole.",
+      "Carefully put a spoonful of chocolate hazelnut spread in each one and then cover it with a spoonful of the batter.",
+      "Put them in the oven for 20 minutes.",
+      "Leave them to cool for 5 minutes before taking them out of the tin.",
+      "Serve sprinkled with a little icing sugar."
+    ]
+  },
+  "muffin-me-indokarido-kai-glaso-sokolatas": {
+    "title": "Coconut muffins with chocolate glaze",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1½ cups flour",
+          "1 tsp baking powder",
+          "3 eggs",
+          "125 g butter at room temperature",
+          "⅔ cup sugar",
+          "1 cup coconut",
+          "1 cup milk",
+          "juice of 1 orange",
+          "zest of 1 orange",
+          "100 g dark chocolate",
+          "100 g butter",
+          "½ cup icing sugar"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C.",
+      "Butter a 12-hole muffin tin well.",
+      "In a large bowl, mix the flour, baking powder, butter and sugar for 1 minute using a hand mixer.",
+      "Add the eggs, milk, orange juice and orange zest and keep mixing with the mixer until smooth.",
+      "Add the coconut and mix for another half a minute.",
+      "Fill each hole about two-thirds full with the mixture and put them in the oven for 25 to 30 minutes.",
+      "Leave them to cool for 5 to 10 minutes and remove them from the tin.",
+      "Meanwhile, make the chocolate glaze. In a pan set over another pan of boiling water (bain-marie), melt the chocolate with the butter and icing sugar, then take it off the heat.",
+      "Leave the chocolate glaze to cool slightly for 1 minute and then carefully spread it over the muffins. Use a brush to cover the sides.",
+      "Leave for about an hour for the glaze to set and serve sprinkled with coconut."
+    ]
+  },
+  "tragana-mpiskota-me-stagones-sokolatas": {
+    "title": "Crunchy biscuits with chocolate chips",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "1½ cups flour",
+          "60 g butter at room temperature",
+          "½ cup milk chocolate chips",
+          "½ cup sugar",
+          "1 egg",
+          "1 tsp orange zest",
+          "2 tbsp orange juice",
+          "baking parchment",
+          "2 tbsp sugar"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 200°C.",
+      "Put the flour, orange zest and butter in a bowl and mix with a hand mixer on low speed for 2 to 3 minutes.",
+      "Gradually add the sugar, orange juice, egg and chocolate chips and keep mixing, increasing the speed of the mixer, until combined into a smooth mixture.",
+      "Grease a baking tray well with oil or butter and cover it with baking parchment.",
+      "Place 2 tbsp of the mixture on the tray for each biscuit, leaving a gap of about 5 cm between them.",
+      "Sprinkle them with 2 tbsp sugar and put them in the oven.",
+      "Bake for about 20 minutes, until golden."
+    ]
+  },
+  "krepes-me-sokolata-kai-maskarpone": {
+    "title": "Crepes with chocolate and mascarpone",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "6 large crepes",
+          "9 tbsp chocolate hazelnut spread",
+          "18 tsp mascarpone",
+          "icing sugar",
+          "cocoa powder"
+        ]
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C.",
+      "Lightly butter a non-stick baking tin.",
+      "Spread 1½ tbsp chocolate hazelnut spread on each crepe and add 3 tsp mascarpone.",
+      "Roll them up and place them in the tin.",
+      "Sprinkle them with cocoa and put them in the oven for 5 minutes.",
+      "As soon as you take them out, serve immediately sprinkled with icing sugar."
+    ]
+  },
+  "tiganites-mpananes": {
+    "title": "Fried bananas",
+    "description": null,
+    "ingredients": [
+      {
+        "title": null,
+        "items": [
+          "2 bananas (not ripe)",
+          "juice of 1 orange",
+          "⅓ cup flour",
+          "2 tbsp sugar",
+          "oil for frying",
+          "icing sugar",
+          "cinnamon"
+        ]
+      }
+    ],
+    "steps": [
+      "Peel the bananas and cut each one in half lengthways.",
+      "Soak them in the orange juice for 15 minutes.",
+      "In a wide frying pan, heat the oil over a medium heat.",
+      "Take the bananas out of the orange juice and dip them in the flour, which you have tipped into a deep plate.",
+      "Fry the floured bananas in hot oil for 2 to 3 minutes.",
+      "Carefully remove them from the pan and place them on a plate lined with kitchen paper to absorb the excess oil.",
+      "Sprinkle them with the sugar and leave them to cool for 5 to 10 minutes.",
+      "Serve sprinkled with icing sugar and cinnamon."
+    ]
+  }
+}

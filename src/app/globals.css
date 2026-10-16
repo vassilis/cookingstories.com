@@ -1,0 +1,147 @@
+:root {
+  --paper: #f6f5f0;
+  --sheet: #ffffff;
+  --ink: #1e2a44;
+  --ink-soft: #3b4560;
+  --muted: #5a6378;
+  --line: #e3e6ec;
+  --line-strong: #c9cfda;
+  --rule: #dce3ee;
+  --margin: #e6a19b;
+  --red: #b8322a;
+  --blue: #2a4ba0;
+  --blue-wash: #eef2fa;
+  --red-on-ink: #f0a49c;
+
+  --font-display: var(--font-didot), "Didot", Georgia, serif;
+  --font-body: var(--font-literata), Georgia, serif;
+  --font-script: var(--font-sacramento), cursive;
+
+  /* Vertical rhythm: room under a section title, and around each section. */
+  --space-title: 64px;
+  --space-section: 104px;
+
+  --shadow-sheet: 0 1px 2px rgba(30, 42, 68, 0.08), 0 14px 32px rgba(30, 42, 68, 0.1);
+  --ruled: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, var(--rule) 31px, var(--rule) 32px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--blue);
+}
+a:hover {
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.08;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --space-title: 40px;
+    --space-section: 72px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 32px;
+}
+@media (max-width: 640px) {
+  .container {
+    padding-inline: 16px;
+  }
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 24px;
+  border-radius: 999px;
+  border: 1px solid var(--ink);
+  background: var(--sheet);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--ink);
+  background: var(--paper);
+}
+.button-primary {
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 600;
+}
+.button-primary:hover {
+  background: #2b3a5c;
+  color: var(--paper);
+}
+.button-quiet {
+  border-color: var(--line-strong);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media print {
+  body {
+    background: #fff;
+    font-size: 12pt;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
