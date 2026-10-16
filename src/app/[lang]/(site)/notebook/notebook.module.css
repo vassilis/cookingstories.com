@@ -1,0 +1,398 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-block: 16px var(--space-section);
+  min-height: 60vh;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 32px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 640px;
+}
+.heading p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.title {
+  font-size: clamp(36px, 4.6vw, 56px);
+}
+
+.account {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.crumbs {
+  font-size: 15px;
+  color: var(--muted);
+}
+.crumbs a {
+  color: var(--muted);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.section h2 {
+  font-size: 32px;
+}
+
+.sectionHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 170px;
+  padding: 22px 20px 20px 48px;
+  background: var(--sheet);
+  box-shadow: var(--shadow-sheet);
+}
+
+.marginLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 2px;
+  background: var(--margin);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1.15;
+  color: var(--ink);
+  text-decoration: none;
+}
+.cardTitle:hover {
+  color: var(--red);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--blue-wash);
+  color: var(--blue);
+  font-size: 13px;
+}
+
+.cardActions {
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+  font-size: 15px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2 320px;
+  column-gap: 56px;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px dotted #a9b1c2;
+  break-inside: avoid;
+}
+.list a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.list a:hover {
+  color: var(--red);
+}
+.list span {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.notes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.noteCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 22px;
+  background: var(--sheet) var(--ruled);
+  box-shadow: var(--shadow-sheet);
+}
+
+.noteBody {
+  margin: 0;
+  font-style: italic;
+  white-space: pre-line;
+  line-height: 32px;
+  color: var(--ink-soft);
+}
+
+/* Editor */
+
+.saved {
+  margin: 0;
+  padding: 14px 18px;
+  background: #e8f3ec;
+  color: #23633f;
+}
+
+.invalid {
+  margin: 0;
+  padding: 14px 18px;
+  background: #fbeceb;
+  color: var(--red);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+@media (min-width: 960px) {
+  .form {
+    grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
+  }
+  .side {
+    position: sticky;
+    top: 24px;
+  }
+}
+
+.main,
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.titleField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.titleField input {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 44px);
+  line-height: 1.15;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--ink);
+  padding: 4px 0 10px;
+  outline: none;
+  min-width: 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+}
+.field > span {
+  font-weight: 600;
+}
+.field small {
+  color: var(--muted);
+  font-size: 14px;
+}
+.field input,
+.field select,
+.field textarea {
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--sheet);
+  font: inherit;
+  font-size: 16px;
+  color: var(--ink);
+}
+.field textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.storySheet textarea.ruled {
+  background: var(--sheet) var(--ruled);
+  line-height: 32px;
+  padding-block: 0;
+}
+
+.panel {
+  margin: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: var(--sheet);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.panel legend {
+  padding: 0 6px;
+  font-family: var(--font-display);
+  font-size: 24px;
+}
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.choice:has(input:checked) {
+  border: 2px solid var(--ink);
+  padding: 11px 13px;
+  background: var(--paper);
+}
+.choice input {
+  margin: 3px 0 0;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--red);
+}
+.choice span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.choice small {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.note {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+}
+.share small {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.copyRow {
+  display: flex;
+  gap: 8px;
+}
+.copyRow input {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink-soft);
+  background: var(--paper);
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+}
+.check input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--red);
+}
+
+.delete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.danger {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--sheet);
+  font-weight: 600;
+}
+.danger:hover {
+  background: #9d2a23;
+  color: var(--sheet);
+}
+
+.dangerQuiet {
+  color: var(--red);
+}

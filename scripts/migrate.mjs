@@ -13,7 +13,7 @@ if (!url) {
 }
 
 const migrationsFolder = join(dirname(fileURLToPath(import.meta.url)), "..", "drizzle");
-const client = postgres(url, { max: 1 });
+const client = postgres(url, { max: 1, onnotice: () => {} });
 
 try {
   await migrate(drizzle(client), { migrationsFolder });

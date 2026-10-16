@@ -3,8 +3,10 @@ import { cacheLife, cacheTag } from "next/cache";
 import { connection } from "next/server";
 import { db } from "@/db";
 import type { Locale } from "@/i18n/config";
+import { currentViewer } from "./session";
 import {
   queryPublicRecipe,
+  queryRecipeForViewer,
   queryRecipeIndex,
   type RecipeDetail,
   type RecipeIndex,
@@ -39,6 +41,20 @@ export async function getRecipeOfTheDay(locale: Locale): Promise<RecipeSummary |
 export async function getPublicRecipe(slug: string, locale: Locale): Promise<RecipeDetail | null> {
   await connection();
   return cachedRecipe(slug, locale);
+}
+
+/**
+ * A recipe page's data: the cached public version when there is one, otherwise whatever this
+ * visitor may see (their own recipe, a share link, or anything for admins), uncached.
+ */
+export async function getRecipeForPage(
+  slug: string,
+  locale: Locale,
+  shareToken: string | null,
+): Promise<RecipeDetail | null> {
+  const listed = await getPublicRecipe(slug, locale);
+  if (listed) return listed;
+  return queryRecipeForViewer(db(), slug, locale, await currentViewer(shareToken));
 }
 
 async function cachedIndex(locale: Locale): Promise<RecipeIndex> {

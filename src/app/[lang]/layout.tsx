@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { GFS_Didot, Literata, Sacramento } from "next/font/google";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
 import { locales } from "@/i18n/config";
 import { getDictionary, getLocale } from "@/i18n/get-dictionary";
 import "../globals.css";
@@ -34,11 +32,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
   return (
     // Browser extensions often add attributes to <html> before React loads; ignore those differences here only.
     <html lang={locale} className={`${didot.variable} ${literata.variable} ${sacramento.variable}`} suppressHydrationWarning>
-      <body>
-        <SiteHeader />
-        {children}
-        <SiteFooter />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

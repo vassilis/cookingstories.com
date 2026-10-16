@@ -22,17 +22,12 @@ export async function AccountLink() {
     );
   }
 
-  if (session.user.role === "admin") {
-    return (
-      <Link href={localePath(locale, "/admin")} className="button button-quiet">
-        {dict.nav.admin}
-      </Link>
-    );
-  }
-
   return (
-    <Link href={`${localePath(locale, "/")}#notebook`.replace("//", "/")} className="button button-quiet">
-      {dict.nav.notebook}
-    </Link>
+    <>
+      {session.user.role === "admin" && <Link href={localePath(locale, "/admin")}>{dict.nav.admin}</Link>}
+      <Link href={localePath(locale, "/notebook")} className="button button-quiet">
+        {dict.nav.notebook}
+      </Link>
+    </>
   );
 }

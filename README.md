@@ -72,6 +72,7 @@ Recipe text lives in `recipe_translations`, one row per language. A recipe has a
    ```bash
    node ops/scripts/seed.mjs
    ```
+   Then restart the app (Coolify's **Restart**): pages cache recipe data in memory, so a page visited before seeding keeps showing the empty list until the cache is cleared.
    Admins come from `ADMIN_EMAILS`. To promote an existing account: `node ops/scripts/grant-admin.mjs you@example.com`.
 6. Point the domain at the server through Cloudflare (proxied, SSL mode "Full (strict)").
 7. In the Postgres resource, schedule backups to the R2 bucket (S3-compatible endpoint `https://<account-id>.r2.cloudflarestorage.com`).

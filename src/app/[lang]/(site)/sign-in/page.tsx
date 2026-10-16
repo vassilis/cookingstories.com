@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { localePath } from "@/i18n/config";
 import { getDictionary, getLocale } from "@/i18n/get-dictionary";
 import { SignInForm } from "./sign-in-form";
@@ -32,6 +33,8 @@ export default async function SignInPage() {
         />
         <h1 style={{ fontSize: 44 }}>{dict.signIn.title}</h1>
         <p style={{ margin: 0, color: "var(--ink-soft)" }}>{dict.signIn.intro}</p>
+        {/* The form reads ?next= from the URL, which is only known at request time. */}
+        <Suspense fallback={null}>
         <SignInForm
           callbackURL={localePath(locale, "/")}
           labels={{
@@ -42,6 +45,7 @@ export default async function SignInPage() {
             error: dict.signIn.error,
           }}
         />
+        </Suspense>
       </div>
     </main>
   );

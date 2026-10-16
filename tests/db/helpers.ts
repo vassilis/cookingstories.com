@@ -11,7 +11,7 @@ export function testDb(): { db: Database; close: () => Promise<void> } {
 
 /** Empties every table so each test starts from nothing. */
 export async function resetDb(db: Database) {
-  await db.execute(sql`truncate table recipe_translations, recipes, session, account, verification, "user" cascade`);
+  await db.execute(sql`truncate table favorites, recipe_notes, recipe_translations, recipes, session, account, verification, "user" cascade`);
 }
 
 type RecipeFixture = {

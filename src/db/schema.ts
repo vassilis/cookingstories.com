@@ -79,3 +79,36 @@ export const recipeTranslations = pgTable(
 
 export type Recipe = typeof recipes.$inferSelect;
 export type RecipeTranslation = typeof recipeTranslations.$inferSelect;
+
+/** A reader's saved recipes. */
+export const favorites = pgTable(
+  "favorites",
+  {
+    userId: text("user_id")
+      .notNull()
+      .references(() => user.id, { onDelete: "cascade" }),
+    recipeId: uuid("recipe_id")
+      .notNull()
+      .references(() => recipes.id, { onDelete: "cascade" }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [primaryKey({ columns: [t.userId, t.recipeId] })],
+);
+
+/** Notes in the margin: one private note per reader per recipe, never shown to anyone else. */
+export const recipeNotes = pgTable(
+  "recipe_notes",
+  {
+    userId: text("user_id")
+      .notNull()
+      .references(() => user.id, { onDelete: "cascade" }),
+    recipeId: uuid("recipe_id")
+      .notNull()
+      .references(() => recipes.id, { onDelete: "cascade" }),
+    body: text("body").notNull(),
+    ...timestamps,
+  },
+  (t) => [primaryKey({ columns: [t.userId, t.recipeId] })],
+);
+
+export type RecipeNote = typeof recipeNotes.$inferSelect;

@@ -1,0 +1,304 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px clamp(16px, 4vw, 40px);
+  border-bottom: 1px solid var(--line);
+  background: var(--sheet);
+}
+
+.logo {
+  flex: none;
+  font-family: var(--font-script);
+  font-size: 32px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 26px;
+  }
+}
+
+.recipeTitle {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--ink-soft);
+}
+
+.runningStrip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px clamp(16px, 4vw, 40px);
+  background: var(--ink);
+}
+
+.runningTimer {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid rgba(246, 245, 240, 0.35);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--paper);
+  font: inherit;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.rang {
+  background: var(--red);
+  border-color: var(--red);
+  font-weight: 600;
+}
+
+.big {
+  min-height: 60px;
+  padding: 0 32px;
+  font-size: 18px;
+  justify-content: center;
+}
+
+/* Ingredients screen */
+
+.prep {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 56px) clamp(16px, 4vw, 40px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.prepList {
+  flex: 1 1 360px;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 28px 32px 72px;
+  background: var(--sheet) var(--ruled);
+  box-shadow: var(--shadow-sheet);
+}
+
+.marginLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 48px;
+  width: 2px;
+  background: var(--margin);
+}
+
+.prepStart {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.prepStart p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+.prepStart small {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.prepTitle {
+  font-size: clamp(36px, 5vw, 56px);
+}
+
+/* Step screen */
+
+.cook {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 40px) clamp(16px, 4vw, 40px) 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.progress {
+  display: flex;
+  gap: 4px;
+}
+.segment,
+.segmentDone {
+  flex: 1 1 0;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--rule);
+}
+.segmentDone {
+  background: var(--ink);
+}
+
+.stepLabel {
+  margin: 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.stepBody {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(16px, 3vw, 32px);
+  align-items: start;
+  padding: clamp(24px, 4vw, 40px);
+  background: var(--sheet);
+  box-shadow: var(--shadow-sheet);
+}
+
+.stepNumber {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 12vw, 128px);
+  line-height: 0.8;
+  color: var(--red);
+}
+
+/* Large, ruled text that can be read from across the kitchen. */
+.stepText {
+  margin: 0;
+  font-size: clamp(22px, 3vw, 32px);
+  line-height: 1.6;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(1.6em - 1px),
+    var(--rule) calc(1.6em - 1px),
+    var(--rule) 1.6em
+  );
+}
+
+.helpers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--blue);
+  background: var(--blue-wash);
+  color: var(--blue);
+  font-size: 16px;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+  padding: 16px 20px;
+  background: var(--sheet);
+  border: 1px solid var(--line);
+}
+.timer[data-ringing] {
+  border-color: var(--red);
+  background: #fbeceb;
+}
+.timer > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.timerLabel {
+  font-size: 14px;
+  color: var(--muted);
+}
+.timer[data-ringing] .timerLabel {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.clock {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.timerButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.awake {
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.nav {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+.nav > * {
+  flex: 1 1 200px;
+}
+
+/* Finished */
+
+.done {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(32px, 6vw, 64px) clamp(16px, 4vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.done > p {
+  margin: 0;
+  font-size: 18px;
+  color: var(--ink-soft);
+}
+
+.doneTitle {
+  font-size: clamp(44px, 7vw, 72px);
+}
+
+.doneNotes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.doneNotes h2 {
+  font-size: 26px;
+}
+.doneNotes p {
+  margin: 0;
+  color: var(--muted);
+}

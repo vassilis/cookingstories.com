@@ -35,17 +35,20 @@ test.describe("admin area", () => {
     await expect(page.locator("#contents").getByText("Fried bananas with honey")).toBeVisible();
   });
 
-  test("hides a recipe from the public site when an admin makes it private", async ({ page }) => {
+  test("hides a recipe from the public site when an admin makes it private", async ({ page, browser }) => {
     await signIn(page, ADMIN_EMAIL);
     await page.goto("/admin/recipes/zesti-milopita?locale=en");
     await page.getByLabel("Who can see it").selectOption("private");
     await page.getByRole("button", { name: "Save changes" }).click();
     await expect(page.getByRole("status")).toContainText("Saved.");
 
-    await page.goto("/recipes/zesti-milopita");
-    await expect(page.getByRole("heading", { name: "We couldn’t find that page" })).toBeVisible();
-    await page.goto("/");
-    await expect(page.locator("#contents li")).toHaveCount(43);
+    // Admins can still open it; everyone else gets the not-found page.
+    const visitor = await browser.newPage();
+    await visitor.goto("/recipes/zesti-milopita");
+    await expect(visitor.getByRole("heading", { name: "We couldn’t find that page" })).toBeVisible();
+    await visitor.goto("/");
+    await expect(visitor.locator("#contents li")).toHaveCount(43);
+    await visitor.close();
 
     // Put it back through the editor (which also refreshes the cache) so other tests see 44.
     await page.goto("/admin/recipes/zesti-milopita?locale=en");

@@ -24,7 +24,7 @@ const extra = existsSync(translationsDir)
       .map((f) => [f.replace(/\.json$/, ""), JSON.parse(readFileSync(join(translationsDir, f), "utf8"))])
   : [];
 
-const sql = postgres(url, { max: 1 });
+const sql = postgres(url, { max: 1, onnotice: () => {} });
 
 try {
   await sql.begin(async (tx) => {

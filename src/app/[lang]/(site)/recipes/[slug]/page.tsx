@@ -2,9 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { RecipeNotes } from "@/components/recipe-notes";
+import { db } from "@/db";
 import { isLocale, localePath } from "@/i18n/config";
-import { format, getDictionary, getLocale } from "@/i18n/get-dictionary";
-import { getPublicRecipe } from "@/lib/recipes";
+import { format, getDictionary, getLocale, type Dictionary } from "@/i18n/get-dictionary";
+import { getNote, isFavorite } from "@/lib/notebook";
+import { canEdit, isAuthor, isListed } from "@/lib/recipe-access";
+import { getPublicRecipe, getRecipeForPage, type RecipeDetail } from "@/lib/recipes";
+import { currentUser, signInPath } from "@/lib/session";
+import { saveNoteAction } from "./actions";
+import { FavoriteButton, HeartIcon } from "./favorite-button";
 import { IngredientChecklist } from "./ingredient-checklist";
 import { PrintButton } from "./print-button";
 import styles from "./recipe.module.css";
@@ -12,7 +19,8 @@ import styles from "./recipe.module.css";
 export async function generateMetadata({ params }: PageProps<"/[lang]/recipes/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const recipe = await getPublicRecipe(slug, await getLocale());
-  if (!recipe) return {};
+  // Only listed recipes get a title and description; private and shared ones stay unindexed.
+  if (!recipe) return { robots: { index: false } };
   return {
     title: recipe.title,
     description: recipe.description ?? undefined,
@@ -22,22 +30,45 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/recipes/[s
   };
 }
 
-export default function RecipePage({ params }: PageProps<"/[lang]/recipes/[slug]">) {
+export default function RecipePage({ params, searchParams }: PageProps<"/[lang]/recipes/[slug]">) {
   return (
     <Suspense fallback={<main className={`container ${styles.page}`} aria-busy="true" />}>
-      <Recipe params={params} />
+      <Recipe params={params} searchParams={searchParams} />
     </Suspense>
   );
 }
 
-async function Recipe({ params }: { params: Promise<{ slug: string }> }) {
+function visibilityNotice(dict: Dictionary, recipe: RecipeDetail): string | null {
+  if (isListed(recipe)) return null;
+  if (recipe.visibility === "private") return dict.recipeTools.onlyYou;
+  if (recipe.visibility === "link") return dict.recipeTools.onlyLink;
+  return recipe.reviewStatus === "rejected" ? dict.recipeTools.rejected : dict.recipeTools.pending;
+}
+
+async function Recipe({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
   const { slug } = await params;
+  const query = await searchParams;
+  const shareToken = typeof query.share === "string" ? query.share : null;
   const locale = await getLocale();
   const dict = await getDictionary();
-  const recipe = await getPublicRecipe(slug, locale);
+  const recipe = await getRecipeForPage(slug, locale, shareToken);
   if (!recipe) notFound();
 
+  const user = await currentUser();
+  const viewer = { userId: user?.id ?? null, isAdmin: user?.isAdmin ?? false };
+  const [favorite, note] = user
+    ? await Promise.all([isFavorite(db(), user.id, recipe.id), getNote(db(), user.id, recipe.id)])
+    : [false, ""];
+
   const recipeHref = (s: string) => localePath(locale, `/recipes/${s}`);
+  const shareQuery = shareToken && recipe.visibility === "link" ? `?share=${encodeURIComponent(shareToken)}` : "";
+  const thisPage = `${recipeHref(recipe.slug)}${shareQuery}`;
   const home = localePath(locale, "/");
   // Tags open the home page contents with that category or country highlighted.
   const filterHref = (key: "category" | "country", value: string) => `${home}?${key}=${value}#contents`;
@@ -45,6 +76,14 @@ async function Recipe({ params }: { params: Promise<{ slug: string }> }) {
     ? (new Intl.DisplayNames([locale], { type: "region" }).of(recipe.country) ?? recipe.country)
     : null;
   const original = isLocale(recipe.originalLocale) ? recipe.originalLocale : null;
+  const notice = visibilityNotice(dict, recipe);
+  // Authors edit in their notebook; admins edit the house collection in the admin area.
+  const editHref = canEdit(recipe, viewer)
+    ? isAuthor(recipe, viewer)
+      ? localePath(locale, `/notebook/recipes/${recipe.slug}/edit`)
+      : localePath(locale, `/admin/recipes/${recipe.slug}`)
+    : null;
+  const t = dict.recipeTools;
 
   return (
     <main className={`container ${styles.page}`} lang={recipe.contentLocale}>
@@ -58,6 +97,12 @@ async function Recipe({ params }: { params: Promise<{ slug: string }> }) {
           <h1 className={styles.title}>{recipe.title}</h1>
           {recipe.description && <p className={styles.description}>{recipe.description}</p>}
         </div>
+
+        {notice && (
+          <p className={`${styles.notice} no-print`} role="note">
+            {notice}
+          </p>
+        )}
 
         <div className={styles.toolbar}>
           <p className={styles.tags}>
@@ -86,10 +131,48 @@ async function Recipe({ params }: { params: Promise<{ slug: string }> }) {
             </p>
           )}
           <div className={`${styles.toolbarEnd} no-print`}>
+            <a
+              href={`${recipeHref(recipe.slug)}/cook${shareQuery}`}
+              target="_blank"
+              rel="noopener"
+              className="button button-primary"
+            >
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6 4l14 8-14 8z" />
+              </svg>
+              {t.cook}
+            </a>
+            {user ? (
+              <FavoriteButton
+                recipeId={recipe.id}
+                initial={favorite}
+                shareToken={shareToken}
+                labels={{ save: t.save, saved: t.saved }}
+              />
+            ) : (
+              <Link href={signInPath(locale, thisPage)} className="button button-quiet">
+                <HeartIcon filled={false} />
+                {t.signInToSave}
+              </Link>
+            )}
+            {editHref && (
+              <Link href={editHref} className="button button-quiet">
+                {t.edit}
+              </Link>
+            )}
             <PrintButton label={dict.recipe.print} />
           </div>
         </div>
       </header>
+
+      {recipe.story && (
+        <section className={styles.story} aria-labelledby="story-title">
+          <h2 id="story-title" className={styles.sectionTitle}>
+            {t.story}
+          </h2>
+          <p>{recipe.story}</p>
+        </section>
+      )}
 
       <div className={styles.body}>
         <aside className={styles.ingredients} aria-labelledby="ingredients-title">
@@ -118,6 +201,26 @@ async function Recipe({ params }: { params: Promise<{ slug: string }> }) {
           </ol>
         </section>
       </div>
+
+      <section className={`${styles.notes} no-print`} aria-labelledby="notes-title">
+        <div className={styles.notesHead}>
+          <h2 id="notes-title" className={styles.sectionTitle}>
+            {t.notesTitle}
+          </h2>
+          <span>{t.notesHint}</span>
+        </div>
+        {user ? (
+          <RecipeNotes
+            initial={note}
+            save={saveNoteAction.bind(null, recipe.id, shareToken)}
+            labels={{ placeholder: t.notesPlaceholder, save: t.notesSave, saved: t.notesSaved, error: t.notesError }}
+          />
+        ) : (
+          <p>
+            <Link href={signInPath(locale, thisPage)}>{t.notesSignIn}</Link>
+          </p>
+        )}
+      </section>
 
       {(recipe.previous || recipe.next) && (
         <nav aria-label={dict.nav.recipes} className={`${styles.pager} no-print`}>

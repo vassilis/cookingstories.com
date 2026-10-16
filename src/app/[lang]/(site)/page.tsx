@@ -9,7 +9,9 @@ import styles from "./home.module.css";
 export default async function HomePage() {
   const dict = await getDictionary();
   const locale = await getLocale();
-  const signIn = localePath(locale, "/sign-in");
+  // Both open the notebook; signed-out visitors are sent to sign in first and come back.
+  const newRecipe = localePath(locale, "/notebook/new");
+  const notebook = localePath(locale, "/notebook");
 
   return (
     <main>
@@ -22,7 +24,7 @@ export default async function HomePage() {
             <a href="#contents" className="button button-primary">
               {dict.home.browse}
             </a>
-            <Link href={signIn} className="button">
+            <Link href={newRecipe} className="button">
               {dict.home.writeYourOwn}
             </Link>
           </div>
@@ -62,7 +64,7 @@ export default async function HomePage() {
             <h2 className={styles.sectionTitle}>{dict.home.notebookTitle}</h2>
             <p>{dict.home.notebookIntro}</p>
           </div>
-          <Link href={signIn} className={`button ${styles.notebookCta}`}>
+          <Link href={notebook} className={`button ${styles.notebookCta}`}>
             {dict.home.notebookCta}
           </Link>
         </div>
@@ -157,7 +159,7 @@ async function World() {
   const locale = await getLocale();
   const { byCountry } = await getRecipeIndex(locale);
   const names = new Intl.DisplayNames([locale], { type: "region" });
-  const signIn = localePath(locale, "/sign-in");
+  const newRecipe = localePath(locale, "/notebook/new");
   const home = localePath(locale, "/");
   const open = INVITES.filter((i) => !byCountry.some((c) => c.country === i.country));
 
@@ -171,13 +173,13 @@ async function World() {
         </Link>
       ))}
       {open.map((i) => (
-        <Link key={i.country} href={signIn} className={`${styles.place} ${styles.placeEmpty}`}>
+        <Link key={i.country} href={newRecipe} className={`${styles.place} ${styles.placeEmpty}`}>
           <span className="eyebrow">{dict.regions[i.region]}</span>
           <span className={styles.placeName}>{names.of(i.country)}</span>
           <span className={styles.placeInvite}>{dict.home.worldEmpty}</span>
         </Link>
       ))}
-      <Link href={signIn} className={`${styles.place} ${styles.placeEmpty}`}>
+      <Link href={newRecipe} className={`${styles.place} ${styles.placeEmpty}`}>
         <span className="eyebrow">{dict.regions.anywhere}</span>
         <span className={styles.placeName}>{dict.home.yourCorner}</span>
         <span className={styles.placeInvite}>{dict.home.worldEmpty}</span>

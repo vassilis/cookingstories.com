@@ -1,5 +1,7 @@
 import { execFileSync } from "node:child_process";
+import { rmSync } from "node:fs";
 import postgres from "postgres";
+import { SESSIONS_DIR } from "./helpers";
 
 /** Fresh database for every run: migrate, wipe, then load the 44 house recipes. */
 export default async function globalSetup() {
@@ -9,10 +11,11 @@ export default async function globalSetup() {
 
   const sql = postgres(url, { max: 1, onnotice: () => {} });
   try {
-    await sql`truncate table recipe_translations, recipes, session, account, verification, "user" cascade`;
+    await sql`truncate table favorites, recipe_notes, recipe_translations, recipes, session, account, verification, "user" cascade`;
   } finally {
     await sql.end();
   }
 
   execFileSync("node", ["scripts/seed.mjs"], { env, stdio: "inherit" });
+  rmSync(SESSIONS_DIR, { recursive: true, force: true });
 }

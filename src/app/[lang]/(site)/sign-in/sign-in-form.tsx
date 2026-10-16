@@ -1,5 +1,6 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
 import { authClient } from "@/lib/auth-client";
 
@@ -13,13 +14,16 @@ export function SignInForm({
   labels: { email: string; submit: string; sending: string; sent: string; error: string };
 }) {
   const [status, setStatus] = useState<Status>("idle");
+  // ?next=/notebook brings the reader back to where they were. Same-site paths only.
+  const next = useSearchParams().get("next");
+  const destination = next && next.startsWith("/") && !next.startsWith("//") ? next : callbackURL;
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const email = String(new FormData(event.currentTarget).get("email") ?? "").trim();
     if (!email) return;
     setStatus("sending");
-    const { error } = await authClient.signIn.magicLink({ email, callbackURL });
+    const { error } = await authClient.signIn.magicLink({ email, callbackURL: destination });
     setStatus(error ? "error" : "sent");
   }
 
